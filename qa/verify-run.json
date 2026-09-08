@@ -1,0 +1,2659 @@
+{
+ "widths": {
+  "1440": {
+   "edge": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "hard": [],
+    "softInScrollBox": [
+     {
+      "sel": "div#tape-track.tape__track",
+      "left": -47,
+      "right": 19533,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.tape__item",
+      "left": -23,
+      "right": 196,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.k",
+      "left": -23,
+      "right": 13,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "a.tape__item",
+      "left": 1437,
+      "right": 1701,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "svg",
+      "left": 1437,
+      "right": 1445,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "path",
+      "left": 1438,
+      "right": 1443,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span",
+      "left": 1453,
+      "right": 1475,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span",
+      "left": 1614,
+      "right": 1701,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.tape__sep",
+      "left": 1725,
+      "right": 1729,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "a.tape__item",
+      "left": 1753,
+      "right": 2010,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "svg",
+      "left": 1753,
+      "right": 1761,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "path",
+      "left": 1754,
+      "right": 1759,
+      "inScrollBox": "div.tape__scroll"
+     }
+    ],
+    "softCount": 344
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   },
+   "fonts": {
+    "dotoCheck": true,
+    "plexCheck": true,
+    "dotoLoaded": true,
+    "plexLoaded": true
+   },
+   "faces": [
+    [
+     "Doto",
+     "100 900",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "Doto",
+     "100 900",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "loaded"
+    ]
+   ],
+   "state": {
+    "market": "open",
+    "bell": "",
+    "ringkind": "",
+    "silence": "",
+    "next": "12:00",
+    "state": "OPEN",
+    "clock": "23:17",
+    "meta": "NEW YORK 11:36:42 AM ET · MARKET OPEN",
+    "nextLine": "NEXT BELL · 12:00 · FOURTH BELL",
+    "marks": "rung,rung,rung,next,pending,pending,pending,pending",
+    "note": "",
+    "plateLabel": "LEADING NOW · 11:00 TO 12:00",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 23:17",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -104.733, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 160,
+     "y": 104,
+     "w": 420,
+     "h": 556
+    },
+    "clockRect": {
+     "top": 154,
+     "bottom": 269,
+     "left": 641,
+     "right": 1280
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "design": {
+    "radius": {
+     "count": 0,
+     "sample": []
+    },
+    "shadows": {
+     "count": 32,
+     "sample": [
+      [
+       "a#nav-x.btn.btn--icon",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "section#desk.plate.card",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "a#plate-cta.btn.btn--primary",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "article.block",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.card",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.tile.tile--today",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.tile",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.card.facts",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "button#copy-token.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "button#copy-pool.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "a#link-stonks.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "a#link-dex.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ]
+     ]
+    },
+    "shadowValues": [
+     "rgb(10, 11, 13) 2px 2px 0px 0px"
+    ],
+    "gradients": {
+     "count": 1,
+     "sample": [
+      [
+       "header#floor.floor",
+       "linear-gradient(rgb(222, 225, 231) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(9"
+      ]
+     ]
+    },
+    "filters": {
+     "count": 0,
+     "sample": []
+    },
+    "opacity": {
+     "count": 0,
+     "sample": []
+    },
+    "offFont": {
+     "count": 0,
+     "sample": []
+    },
+    "smallDoto": {
+     "count": 0,
+     "sample": []
+    },
+    "blue": {
+     "count": 0,
+     "sample": []
+    },
+    "offRamp": [],
+    "eased": {
+     "count": 0,
+     "sample": []
+    },
+    "centered": {
+     "count": 0,
+     "sample": []
+    },
+    "imgs": [
+     [
+      "img.bell__img.bell__img--day",
+      "0px",
+      "none",
+      "none",
+      "847x1121",
+      "420x556"
+     ]
+    ],
+    "h1": 1,
+    "buttonsAboveFold": [
+     {
+      "sel": "button#nav-ca.chip-ca",
+      "text": "CA 0xBE11…0BE1",
+      "top": 44,
+      "bottom": 68
+     },
+     {
+      "sel": "a#nav-x.btn.btn--icon",
+      "text": "",
+      "top": 40,
+      "bottom": 72
+     },
+     {
+      "sel": "a#plate-cta.btn.btn--primary",
+      "text": "BEAT IT",
+      "top": 804,
+      "bottom": 840
+     }
+    ],
+    "hero": {
+     "cols": "456.656px 639.344px",
+     "copyAlign": "start",
+     "copyLeft": 505,
+     "copyWidth": 558,
+     "containerWidth": 1168,
+     "heroBottom": 744
+    },
+    "emDash": 0,
+    "enDash": 0,
+    "textSample": "TAPE\n$BELL\n0.0000412 NVDAC\n$0.00934\nNVDAC\n$226.69\nBUY\n0X029F…5A00\n36.00 NVDAC\nSELL 0X82BF…CA00 88.10 NVDAC\nBUY\n0XB8BD…C000\n80.00 NVDAC\nSELL 0XF426…4740 12.40 NVDAC\nBUY\nNOONBELL.BASE.ETH\n200.00 NVDAC\nB"
+   },
+   "pixels": {
+    "size": [
+     1440,
+     5037
+    ],
+    "colorfulPct": 1.75,
+    "bluePct": 1.43,
+    "blueOutsideBell": 0,
+    "blueOutsideBbox": null
+   },
+   "countdown": {
+    "a": "23:16",
+    "b": "23:14",
+    "elapsed": 2.06
+   },
+   "tape": {
+    "a": "matrix(1, 0, 0, 1, -150.001, 0)",
+    "b": "matrix(1, 0, 0, 1, -270.002, 0)"
+   }
+  },
+  "760": {
+   "edge": {
+    "scrollWidth": 760,
+    "innerWidth": 760,
+    "hard": [],
+    "softInScrollBox": [
+     {
+      "sel": "div#tape-track.tape__track",
+      "left": -47,
+      "right": 19533,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.tape__item",
+      "left": -23,
+      "right": 196,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.k",
+      "left": -23,
+      "right": 13,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "a.tape__item",
+      "left": 661,
+      "right": 864,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.sell",
+      "left": 661,
+      "right": 864,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.tape__sep",
+      "left": 888,
+      "right": 892,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "a.tape__item",
+      "left": 916,
+      "right": 1130,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "svg",
+      "left": 916,
+      "right": 924,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "path",
+      "left": 917,
+      "right": 922,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span",
+      "left": 932,
+      "right": 954,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span",
+      "left": 1050,
+      "right": 1130,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.tape__sep",
+      "left": 1154,
+      "right": 1158,
+      "inScrollBox": "div.tape__scroll"
+     }
+    ],
+    "softCount": 388
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   },
+   "fonts": {
+    "dotoCheck": true,
+    "plexCheck": true,
+    "dotoLoaded": true,
+    "plexLoaded": true
+   },
+   "faces": [
+    [
+     "Doto",
+     "100 900",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "Doto",
+     "100 900",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "loaded"
+    ]
+   ],
+   "state": {
+    "market": "open",
+    "bell": "",
+    "ringkind": "",
+    "silence": "",
+    "next": "12:00",
+    "state": "OPEN",
+    "clock": "23:17",
+    "meta": "NEW YORK 11:36:42 AM ET · MARKET OPEN",
+    "nextLine": "NEXT BELL · 12:00 · FOURTH BELL",
+    "marks": "rung,rung,rung,next,pending,pending,pending,pending",
+    "note": "",
+    "plateLabel": "LEADING NOW · 11:00 TO 12:00",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 23:17",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -109.721, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 24,
+     "y": 104,
+     "w": 300,
+     "h": 397
+    },
+    "clockRect": {
+     "top": 605,
+     "bottom": 687,
+     "left": 24,
+     "right": 736
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "design": {
+    "radius": {
+     "count": 0,
+     "sample": []
+    },
+    "shadows": {
+     "count": 32,
+     "sample": [
+      [
+       "a#nav-x.btn.btn--icon",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "section#desk.plate.card",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "a#plate-cta.btn.btn--primary",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "article.block",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.card",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.tile.tile--today",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.tile",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.card.facts",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "button#copy-token.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "button#copy-pool.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "a#link-stonks.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "a#link-dex.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ]
+     ]
+    },
+    "shadowValues": [
+     "rgb(10, 11, 13) 2px 2px 0px 0px"
+    ],
+    "gradients": {
+     "count": 1,
+     "sample": [
+      [
+       "header#floor.floor",
+       "linear-gradient(rgb(222, 225, 231) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(9"
+      ]
+     ]
+    },
+    "filters": {
+     "count": 0,
+     "sample": []
+    },
+    "opacity": {
+     "count": 0,
+     "sample": []
+    },
+    "offFont": {
+     "count": 0,
+     "sample": []
+    },
+    "smallDoto": {
+     "count": 0,
+     "sample": []
+    },
+    "blue": {
+     "count": 0,
+     "sample": []
+    },
+    "offRamp": [],
+    "eased": {
+     "count": 0,
+     "sample": []
+    },
+    "centered": {
+     "count": 0,
+     "sample": []
+    },
+    "imgs": [
+     [
+      "img.bell__img.bell__img--day",
+      "0px",
+      "none",
+      "none",
+      "847x1121",
+      "300x397"
+     ]
+    ],
+    "h1": 1,
+    "buttonsAboveFold": [
+     {
+      "sel": "button#nav-ca.chip-ca",
+      "text": "CA 0xBE11…0BE1",
+      "top": 44,
+      "bottom": 68
+     },
+     {
+      "sel": "a#nav-x.btn.btn--icon",
+      "text": "",
+      "top": 40,
+      "bottom": 72
+     }
+    ],
+    "hero": {
+     "cols": "712px",
+     "copyAlign": "start",
+     "copyLeft": 24,
+     "copyWidth": 558,
+     "containerWidth": 760,
+     "heroBottom": 909
+    },
+    "emDash": 0,
+    "enDash": 0,
+    "textSample": "TAPE\n$BELL\n0.0000412 NVDAC\n$0.00934\nNVDAC\n$226.69\nBUY\n0X029F…5A00\n36.00 NVDAC\nSELL 0X82BF…CA00 88.10 NVDAC\nBUY\n0XB8BD…C000\n80.00 NVDAC\nSELL 0XF426…4740 12.40 NVDAC\nBUY\nNOONBELL.BASE.ETH\n200.00 NVDAC\nB"
+   },
+   "pixels": {
+    "size": [
+     760,
+     6361
+    ],
+    "colorfulPct": 1.34,
+    "bluePct": 1.09,
+    "blueOutsideBell": 0,
+    "blueOutsideBbox": null
+   },
+   "countdown": {
+    "a": "23:16",
+    "b": "23:14",
+    "elapsed": 2.05
+   },
+   "tape": {
+    "a": "matrix(1, 0, 0, 1, -140.001, 0)",
+    "b": "matrix(1, 0, 0, 1, -260.002, 0)"
+   }
+  },
+  "390": {
+   "edge": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "hard": [],
+    "softInScrollBox": [
+     {
+      "sel": "div#tape-track.tape__track",
+      "left": -52,
+      "right": 19528,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.tape__item",
+      "left": -28,
+      "right": 191,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.k",
+      "left": -28,
+      "right": 8,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "a.tape__item",
+      "left": 390,
+      "right": 604,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "svg",
+      "left": 390,
+      "right": 398,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "path",
+      "left": 391,
+      "right": 396,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span",
+      "left": 406,
+      "right": 428,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span",
+      "left": 524,
+      "right": 604,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.tape__sep",
+      "left": 628,
+      "right": 632,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "a.tape__item",
+      "left": 656,
+      "right": 859,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "span.sell",
+      "left": 656,
+      "right": 859,
+      "inScrollBox": "div.tape__scroll"
+     },
+     {
+      "sel": "svg",
+      "left": 656,
+      "right": 664,
+      "inScrollBox": "div.tape__scroll"
+     }
+    ],
+    "softCount": 443
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   },
+   "fonts": {
+    "dotoCheck": true,
+    "plexCheck": true,
+    "dotoLoaded": true,
+    "plexLoaded": true
+   },
+   "faces": [
+    [
+     "Doto",
+     "100 900",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "Doto",
+     "100 900",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "400",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "500",
+     "normal",
+     "loaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "unloaded"
+    ],
+    [
+     "IBM Plex Mono",
+     "600",
+     "normal",
+     "loaded"
+    ]
+   ],
+   "state": {
+    "market": "open",
+    "bell": "",
+    "ringkind": "",
+    "silence": "",
+    "next": "12:00",
+    "state": "OPEN",
+    "clock": "23:17",
+    "meta": "NEW YORK 11:36:42 AM ET · MARKET OPEN",
+    "nextLine": "NEXT BELL · 12:00 · FOURTH BELL",
+    "marks": "rung,rung,rung,next,pending,pending,pending,pending",
+    "note": "",
+    "plateLabel": "LEADING NOW · 11:00 TO 12:00",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 23:17",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -109.721, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 75,
+     "y": 104,
+     "w": 240,
+     "h": 318
+    },
+    "clockRect": {
+     "top": 526,
+     "bottom": 584,
+     "left": 16,
+     "right": 374
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "design": {
+    "radius": {
+     "count": 0,
+     "sample": []
+    },
+    "shadows": {
+     "count": 33,
+     "sample": [
+      [
+       "a#nav-x.btn.btn--icon",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "button#nav-menu.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "section#desk.plate.card",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "a#plate-cta.btn.btn--primary",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "article.block",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.card",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.tile.tile--today",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.tile",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "div.card.facts",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "button#copy-token.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "button#copy-pool.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ],
+      [
+       "a#link-stonks.btn.btn--sm",
+       "rgb(10, 11, 13) 2px 2px 0px 0px"
+      ]
+     ]
+    },
+    "shadowValues": [
+     "rgb(10, 11, 13) 2px 2px 0px 0px"
+    ],
+    "gradients": {
+     "count": 1,
+     "sample": [
+      [
+       "header#floor.floor",
+       "linear-gradient(rgb(222, 225, 231) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(9"
+      ]
+     ]
+    },
+    "filters": {
+     "count": 0,
+     "sample": []
+    },
+    "opacity": {
+     "count": 0,
+     "sample": []
+    },
+    "offFont": {
+     "count": 0,
+     "sample": []
+    },
+    "smallDoto": {
+     "count": 0,
+     "sample": []
+    },
+    "blue": {
+     "count": 0,
+     "sample": []
+    },
+    "offRamp": [],
+    "eased": {
+     "count": 0,
+     "sample": []
+    },
+    "centered": {
+     "count": 0,
+     "sample": []
+    },
+    "imgs": [
+     [
+      "img.bell__img.bell__img--day",
+      "0px",
+      "none",
+      "none",
+      "847x1121",
+      "240x318"
+     ]
+    ],
+    "h1": 1,
+    "buttonsAboveFold": [
+     {
+      "sel": "button#nav-ca.chip-ca",
+      "text": "CA 0xBE11…0BE1",
+      "top": 44,
+      "bottom": 68
+     },
+     {
+      "sel": "a#nav-x.btn.btn--icon",
+      "text": "",
+      "top": 40,
+      "bottom": 72
+     },
+     {
+      "sel": "button#nav-menu.btn.btn--sm",
+      "text": "MENU",
+      "top": 40,
+      "bottom": 72
+     }
+    ],
+    "hero": {
+     "cols": "358px",
+     "copyAlign": "start",
+     "copyLeft": 16,
+     "copyWidth": 358,
+     "containerWidth": 390,
+     "heroBottom": 872
+    },
+    "emDash": 0,
+    "enDash": 0,
+    "textSample": "TAPE\n$BELL\n0.0000412 NVDAC\n$0.00934\nNVDAC\n$226.69\nBUY\n0X029F…5A00\n36.00 NVDAC\nSELL 0X82BF…CA00 88.10 NVDAC\nBUY\n0XB8BD…C000\n80.00 NVDAC\nSELL 0XF426…4740 12.40 NVDAC\nBUY\nNOONBELL.BASE.ETH\n200.00 NVDAC\nB"
+   },
+   "pixels": {
+    "size": [
+     390,
+     7810
+    ],
+    "colorfulPct": 1.36,
+    "bluePct": 1.11,
+    "blueOutsideBell": 0,
+    "blueOutsideBbox": null
+   },
+   "countdown": {
+    "a": "23:16",
+    "b": "23:14",
+    "elapsed": 2.07
+   },
+   "tape": {
+    "a": "matrix(1, 0, 0, 1, -130.001, 0)",
+    "b": "matrix(1, 0, 0, 1, -255.002, 0)"
+   }
+  }
+ },
+ "scenes": {
+  "closing-1440": {
+   "load": {
+    "market": "open",
+    "bell": "",
+    "ringkind": "",
+    "silence": "",
+    "next": "4:00",
+    "state": "OPEN",
+    "clock": "00:09",
+    "meta": "NEW YORK 3:59:50 PM ET · MARKET OPEN",
+    "nextLine": "NEXT BELL · 4:00 · EIGHT BELLS",
+    "marks": "rung,rung,rung,rung,rung,rung,rung,next",
+    "note": "",
+    "plateLabel": "LEADING NOW · 3:00 TO 4:00",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 00:09",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -34.9111, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 160,
+     "y": 104,
+     "w": 420,
+     "h": 556
+    },
+    "clockRect": {
+     "top": 154,
+     "bottom": 269,
+     "left": 641,
+     "right": 1280
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "ring": {
+    "market": "closed",
+    "bell": "ringing",
+    "ringkind": "close",
+    "silence": "overnight",
+    "next": "FRI 9:30",
+    "state": "CLOSING",
+    "clock": "00:00:00",
+    "meta": "NEW YORK · CLOSING BELL · DROPPING 1,204.55 NVDAc EST",
+    "nextLine": "EIGHT BELLS · 4:00 · CLOSING",
+    "marks": "rung,rung,rung,rung,rung,rung,rung,ringing",
+    "note": "",
+    "plateLabel": "LAST BELL · TUE 11:00",
+    "plateRank": "1",
+    "plateWho": "0x8d56…ca00",
+    "plateSize": "402.50 NVDAc",
+    "platePrize": "PRIZE +3.80 NVDAc",
+    "plateEnds": "NEXT RACE FRI 9:30",
+    "plateCta": "BUY $BELL",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "THE GAP (NVDAc) 312.40 BUILDING SINCE THU 4:00 · OPENS FRI 9:30",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "SILENCE",
+    "tapeItems": 68,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "182s",
+     "timing": "steps(2184)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -624.982, 0)",
+     "width": 21839
+    },
+    "ledgerRows": 6,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(10, 11, 13)",
+    "bodyColor": "rgb(238, 240, 243)",
+    "bellShown": "day",
+    "bellAnim": "swing",
+    "bellRect": {
+     "x": 160,
+     "y": 104,
+     "w": 420,
+     "h": 556
+    },
+    "clockRect": {
+     "top": 154,
+     "bottom": 248,
+     "left": 641,
+     "right": 1280
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "after": {
+    "market": "closed",
+    "bell": "",
+    "ringkind": "",
+    "silence": "overnight",
+    "next": "FRI 9:30",
+    "state": "SILENCE",
+    "clock": "17:29:46",
+    "meta": "NEW YORK 4:00:13 PM ET · SILENCE",
+    "nextLine": "OPENING BELL · FRI 9:30 · FIRST BELL",
+    "marks": "rung,rung,rung,rung,rung,rung,rung,rung",
+    "note": "EIGHT BELLS · WATCH OVER · NEXT BELLS FRI",
+    "plateLabel": "LAST BELL · TUE 11:00",
+    "plateRank": "1",
+    "plateWho": "0x8d56…ca00",
+    "plateSize": "402.50 NVDAc",
+    "platePrize": "PRIZE +3.80 NVDAc",
+    "plateEnds": "NEXT RACE FRI 9:30",
+    "plateCta": "BUY $BELL",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "THE GAP (NVDAc) 312.40 BUILDING SINCE THU 4:00 · OPENS FRI 9:30",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "SILENCE",
+    "tapeItems": 68,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "182s",
+     "timing": "steps(2184)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -1379.96, 0)",
+     "width": 21839
+    },
+    "ledgerRows": 6,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(10, 11, 13)",
+    "bodyColor": "rgb(238, 240, 243)",
+    "bellShown": "night",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 160,
+     "y": 104,
+     "w": 420,
+     "h": 556
+    },
+    "clockRect": {
+     "top": 154,
+     "bottom": 248,
+     "left": 641,
+     "right": 1280
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   }
+  },
+  "closing-390": {
+   "load": {
+    "market": "open",
+    "bell": "",
+    "ringkind": "",
+    "silence": "",
+    "next": "4:00",
+    "state": "OPEN",
+    "clock": "00:09",
+    "meta": "NEW YORK 3:59:50 PM ET · MARKET OPEN",
+    "nextLine": "NEXT BELL · 4:00 · EIGHT BELLS",
+    "marks": "rung,rung,rung,rung,rung,rung,rung,next",
+    "note": "",
+    "plateLabel": "LEADING NOW · 3:00 TO 4:00",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 00:09",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -34.9111, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 75,
+     "y": 104,
+     "w": 240,
+     "h": 318
+    },
+    "clockRect": {
+     "top": 526,
+     "bottom": 584,
+     "left": 16,
+     "right": 374
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "ring": {
+    "market": "closed",
+    "bell": "ringing",
+    "ringkind": "close",
+    "silence": "overnight",
+    "next": "FRI 9:30",
+    "state": "CLOSING",
+    "clock": "00:00:00",
+    "meta": "NEW YORK · CLOSING BELL · DROPPING 1,204.55 NVDAc EST",
+    "nextLine": "EIGHT BELLS · 4:00 · CLOSING",
+    "marks": "rung,rung,rung,rung,rung,rung,rung,ringing",
+    "note": "",
+    "plateLabel": "LAST BELL · TUE 11:00",
+    "plateRank": "1",
+    "plateWho": "0x8d56…ca00",
+    "plateSize": "402.50 NVDAc",
+    "platePrize": "PRIZE +3.80 NVDAc",
+    "plateEnds": "NEXT RACE FRI 9:30",
+    "plateCta": "BUY $BELL",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "THE GAP (NVDAc) 312.40 BUILDING SINCE THU 4:00 · OPENS FRI 9:30",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "SILENCE",
+    "tapeItems": 68,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "182s",
+     "timing": "steps(2184)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -629.982, 0)",
+     "width": 21839
+    },
+    "ledgerRows": 6,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(10, 11, 13)",
+    "bodyColor": "rgb(238, 240, 243)",
+    "bellShown": "day",
+    "bellAnim": "swing",
+    "bellRect": {
+     "x": 75,
+     "y": 104,
+     "w": 240,
+     "h": 318
+    },
+    "clockRect": {
+     "top": 540,
+     "bottom": 583,
+     "left": 16,
+     "right": 374
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "after": {
+    "market": "closed",
+    "bell": "",
+    "ringkind": "",
+    "silence": "overnight",
+    "next": "FRI 9:30",
+    "state": "SILENCE",
+    "clock": "17:29:46",
+    "meta": "NEW YORK 4:00:13 PM ET · SILENCE",
+    "nextLine": "OPENING BELL · FRI 9:30 · FIRST BELL",
+    "marks": "rung,rung,rung,rung,rung,rung,rung,rung",
+    "note": "EIGHT BELLS · WATCH OVER · NEXT BELLS FRI",
+    "plateLabel": "LAST BELL · TUE 11:00",
+    "plateRank": "1",
+    "plateWho": "0x8d56…ca00",
+    "plateSize": "402.50 NVDAc",
+    "platePrize": "PRIZE +3.80 NVDAc",
+    "plateEnds": "NEXT RACE FRI 9:30",
+    "plateCta": "BUY $BELL",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "THE GAP (NVDAc) 312.40 BUILDING SINCE THU 4:00 · OPENS FRI 9:30",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "SILENCE",
+    "tapeItems": 68,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "182s",
+     "timing": "steps(2184)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -1379.96, 0)",
+     "width": 21839
+    },
+    "ledgerRows": 6,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(10, 11, 13)",
+    "bodyColor": "rgb(238, 240, 243)",
+    "bellShown": "night",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 75,
+     "y": 104,
+     "w": 240,
+     "h": 318
+    },
+    "clockRect": {
+     "top": 526,
+     "bottom": 569,
+     "left": 16,
+     "right": 374
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   }
+  },
+  "theme-closed-1440": {
+   "state": {
+    "market": "closed",
+    "bell": "",
+    "ringkind": "",
+    "silence": "",
+    "next": "3:00",
+    "state": "OPEN",
+    "clock": "03:32",
+    "meta": "NEW YORK 2:56:27 PM ET · MARKET OPEN",
+    "nextLine": "NEXT BELL · 3:00 · SEVENTH BELL",
+    "marks": "rung,rung,rung,rung,rung,rung,next,pending",
+    "note": "",
+    "plateLabel": "LEADING NOW · 2:00 TO 3:00",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 03:32",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -94.7588, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(10, 11, 13)",
+    "bodyColor": "rgb(238, 240, 243)",
+    "bellShown": "night",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 160,
+     "y": 104,
+     "w": 420,
+     "h": 556
+    },
+    "clockRect": {
+     "top": 154,
+     "bottom": 269,
+     "left": 641,
+     "right": 1280
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "pixels": {
+    "size": [
+     1440,
+     5037
+    ],
+    "colorfulPct": 1.76,
+    "bluePct": 0.12,
+    "blueOutsideBell": 0,
+    "blueOutsideBbox": null
+   },
+   "offRamp": [],
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   }
+  },
+  "theme-closed-390": {
+   "state": {
+    "market": "closed",
+    "bell": "",
+    "ringkind": "",
+    "silence": "",
+    "next": "3:00",
+    "state": "OPEN",
+    "clock": "03:30",
+    "meta": "NEW YORK 2:56:29 PM ET · MARKET OPEN",
+    "nextLine": "NEXT BELL · 3:00 · SEVENTH BELL",
+    "marks": "rung,rung,rung,rung,rung,rung,next,pending",
+    "note": "",
+    "plateLabel": "LEADING NOW · 2:00 TO 3:00",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 03:30",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -94.7588, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(10, 11, 13)",
+    "bodyColor": "rgb(238, 240, 243)",
+    "bellShown": "night",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 75,
+     "y": 104,
+     "w": 240,
+     "h": 318
+    },
+    "clockRect": {
+     "top": 526,
+     "bottom": 584,
+     "left": 16,
+     "right": 374
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "pixels": {
+    "size": [
+     390,
+     7810
+    ],
+    "colorfulPct": 1.36,
+    "bluePct": 0.09,
+    "blueOutsideBell": 0,
+    "blueOutsideBbox": null
+   },
+   "offRamp": [],
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   }
+  },
+  "demo-ring-1440": {
+   "state": {
+    "market": "open",
+    "bell": "ringing",
+    "ringkind": "hour",
+    "silence": "",
+    "next": "3:00",
+    "state": "RINGING",
+    "clock": "03:28",
+    "meta": "NEW YORK · BELL 2:00 · RINGING",
+    "nextLine": "SIXTH BELL · 2:00 · RINGING NOW",
+    "marks": "rung,rung,rung,rung,rung,ringing,next,pending",
+    "note": "",
+    "plateLabel": "BELL 2:00 · SETTLING",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 03:28",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -69.8223, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "swing",
+    "bellRect": {
+     "x": 160,
+     "y": 104,
+     "w": 420,
+     "h": 556
+    },
+    "clockRect": {
+     "top": 154,
+     "bottom": 269,
+     "left": 641,
+     "right": 1280
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "pixels": {
+    "size": [
+     1440,
+     900
+    ],
+    "colorfulPct": 9.81,
+    "bluePct": 8.09,
+    "blueOutsideBell": 2196,
+    "blueOutsideBbox": [
+     118,
+     440,
+     154,
+     546
+    ]
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   }
+  },
+  "demo-ring-390": {
+   "state": {
+    "market": "open",
+    "bell": "ringing",
+    "ringkind": "hour",
+    "silence": "",
+    "next": "3:00",
+    "state": "RINGING",
+    "clock": "03:27",
+    "meta": "NEW YORK · BELL 2:00 · RINGING",
+    "nextLine": "SIXTH BELL · 2:00 · RINGING NOW",
+    "marks": "rung,rung,rung,rung,rung,ringing,next,pending",
+    "note": "",
+    "plateLabel": "BELL 2:00 · SETTLING",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 03:27",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -69.8223, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "swing",
+    "bellRect": {
+     "x": 75,
+     "y": 104,
+     "w": 240,
+     "h": 318
+    },
+    "clockRect": {
+     "top": 526,
+     "bottom": 584,
+     "left": 16,
+     "right": 374
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "pixels": {
+    "size": [
+     390,
+     844
+    ],
+    "colorfulPct": 12.62,
+    "bluePct": 10.37,
+    "blueOutsideBell": 952,
+    "blueOutsideBbox": [
+     44,
+     294,
+     70,
+     356
+    ]
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   }
+  },
+  "demo-ring-t-1440": {
+   "state": {
+    "market": "open",
+    "bell": "ringing",
+    "ringkind": "hour",
+    "silence": "",
+    "next": "12:00",
+    "state": "RINGING",
+    "clock": "23:17",
+    "meta": "NEW YORK · BELL 11:00 · RINGING",
+    "nextLine": "THIRD BELL · 11:00 · RINGING NOW",
+    "marks": "rung,rung,ringing,next,pending,pending,pending,pending",
+    "note": "",
+    "plateLabel": "BELL 11:00 · SETTLING",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 23:17",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -69.8223, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "swing",
+    "bellRect": {
+     "x": 160,
+     "y": 104,
+     "w": 420,
+     "h": 556
+    },
+    "clockRect": {
+     "top": 154,
+     "bottom": 269,
+     "left": 641,
+     "right": 1280
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "pixels": {
+    "size": [
+     1440,
+     900
+    ],
+    "colorfulPct": 9.82,
+    "bluePct": 8.08,
+    "blueOutsideBell": 3016,
+    "blueOutsideBbox": [
+     108,
+     430,
+     154,
+     546
+    ]
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   }
+  },
+  "live-1440": {
+   "state": {
+    "market": "open",
+    "bell": "",
+    "ringkind": "",
+    "silence": "",
+    "next": "3:00",
+    "state": "OPEN",
+    "clock": "03:23",
+    "meta": "NEW YORK 2:56:36 PM ET · MARKET OPEN",
+    "nextLine": "NEXT BELL · 3:00 · SEVENTH BELL",
+    "marks": "rung,rung,rung,rung,rung,rung,next,pending",
+    "note": "",
+    "plateLabel": "LEADING NOW · 2:00 TO 3:00",
+    "plateRank": "1",
+    "plateWho": "ringer.base.eth",
+    "plateSize": "1,240.00 NVDAc",
+    "platePrize": "PRIZE +4.40 NVDAc EST",
+    "plateEnds": "ENDS IN 03:23",
+    "plateCta": "BEAT IT",
+    "plateHref": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "receipt": [
+     "LAST DROP (NVDAc) 1,170.10 FRI 4:00 · 3,390 PAID",
+     "TODAY'S DESK (NVDAc) 1,204.55 $273,059 EST · SO FAR · DROPS AT 4:00 ET",
+     "HOLDERS 3,412 ELIGIBLE · 2.9215 NVDAc PER 1M BELL EST"
+    ],
+    "tapeLabel": "TAPE",
+    "tapeItems": 64,
+    "tapeAnim": {
+     "name": "tape",
+     "duration": "163.5s",
+     "timing": "steps(1963)",
+     "play": "running",
+     "transform": "matrix(1, 0, 0, 1, -94.7588, 0)",
+     "width": 19580
+    },
+    "ledgerRows": 7,
+    "tiles": 14,
+    "footer": "STATE · DEMO DATA · 11:36:41 AM ET · BLOCK 34,120,118 · NOT LIVE",
+    "bodyBg": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(10, 11, 13)",
+    "bellShown": "day",
+    "bellAnim": "none",
+    "bellRect": {
+     "x": 160,
+     "y": 104,
+     "w": 420,
+     "h": 556
+    },
+    "clockRect": {
+     "top": 154,
+     "bottom": 269,
+     "left": 641,
+     "right": 1280
+    },
+    "links": {
+     "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+     "dex": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+     "x": "https://x.com/",
+     "navX": "https://x.com/",
+     "readTape": "#drop"
+    }
+   },
+   "log": {
+    "errors": [],
+    "warnings": [],
+    "failed": []
+   }
+  },
+  "reduced-motion": {
+   "tape": "none",
+   "overflow": "auto",
+   "colon": "none"
+  }
+ },
+ "checks": [
+  {
+   "check": "1440 scrollWidth == innerWidth",
+   "ok": true,
+   "detail": "1440 vs 1440"
+  },
+  {
+   "check": "1440 no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "1440 no failed requests",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "1440 no element past the viewport edge (outside scroll boxes)",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 Doto loaded",
+   "ok": true,
+   "detail": "[[\"Doto\", \"100 900\", \"normal\", \"unloaded\"], [\"Doto\", \"100 900\", \"normal\", \"loaded\"], [\"IBM Plex Mono\", \"400\", \"normal\", \"unloaded\"], [\"IBM Plex Mono\", \"400\", \"normal\", \"unloaded\"]]"
+  },
+  {
+   "check": "1440 IBM Plex Mono loaded",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "1440 countdown moved over 2s",
+   "ok": true,
+   "detail": "23:16 -> 23:14 in 2.06s"
+  },
+  {
+   "check": "1440 tape scrolls",
+   "ok": true,
+   "detail": "matrix(1, 0, 0, 1, -150.001, 0) -> matrix(1, 0, 0, 1, -270.002, 0) 163.5s steps(1963)"
+  },
+  {
+   "check": "1440 LEADING NOW shows a name",
+   "ok": true,
+   "detail": "LEADING NOW · 11:00 TO 12:00 | ringer.base.eth"
+  },
+  {
+   "check": "1440 LEADING NOW shows a number",
+   "ok": true,
+   "detail": "1,240.00 NVDAc"
+  },
+  {
+   "check": "1440 BEAT IT points at a buy URL",
+   "ok": true,
+   "detail": "BEAT IT -> https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1"
+  },
+  {
+   "check": "1440 no blue outside the bell (pixels)",
+   "ok": true,
+   "detail": "{\"size\": [1440, 5037], \"colorfulPct\": 1.75, \"bluePct\": 1.43, \"blueOutsideBell\": 0, \"blueOutsideBbox\": null}"
+  },
+  {
+   "check": "1440 no blue in computed styles",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 zero radius everywhere",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 shadows are hard 2px/3px",
+   "ok": true,
+   "detail": "[\"rgb(10, 11, 13) 2px 2px 0px 0px\"]"
+  },
+  {
+   "check": "1440 gradients only on the graph paper",
+   "ok": true,
+   "detail": "[[\"header#floor.floor\", \"linear-gradient(rgb(222, 225, 231) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(9\"]]"
+  },
+  {
+   "check": "1440 no filters",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 only Doto and IBM Plex Mono",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 no Doto under 28px",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 colors on the grey ramp",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 motion uses steps()",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 no centered copy",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 no em dash on the page",
+   "ok": true,
+   "detail": "em 0 en 0"
+  },
+  {
+   "check": "1440 no banned words on the page",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 no emoji on the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "1440 clock in the first viewport",
+   "ok": true,
+   "detail": "{\"top\": 154, \"bottom\": 269, \"left\": 641, \"right\": 1280}"
+  },
+  {
+   "check": "760 scrollWidth == innerWidth",
+   "ok": true,
+   "detail": "760 vs 760"
+  },
+  {
+   "check": "760 no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "760 no failed requests",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "760 no element past the viewport edge (outside scroll boxes)",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 Doto loaded",
+   "ok": true,
+   "detail": "[[\"Doto\", \"100 900\", \"normal\", \"unloaded\"], [\"Doto\", \"100 900\", \"normal\", \"loaded\"], [\"IBM Plex Mono\", \"400\", \"normal\", \"unloaded\"], [\"IBM Plex Mono\", \"400\", \"normal\", \"unloaded\"]]"
+  },
+  {
+   "check": "760 IBM Plex Mono loaded",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "760 countdown moved over 2s",
+   "ok": true,
+   "detail": "23:16 -> 23:14 in 2.05s"
+  },
+  {
+   "check": "760 tape scrolls",
+   "ok": true,
+   "detail": "matrix(1, 0, 0, 1, -140.001, 0) -> matrix(1, 0, 0, 1, -260.002, 0) 163.5s steps(1963)"
+  },
+  {
+   "check": "760 LEADING NOW shows a name",
+   "ok": true,
+   "detail": "LEADING NOW · 11:00 TO 12:00 | ringer.base.eth"
+  },
+  {
+   "check": "760 LEADING NOW shows a number",
+   "ok": true,
+   "detail": "1,240.00 NVDAc"
+  },
+  {
+   "check": "760 BEAT IT points at a buy URL",
+   "ok": true,
+   "detail": "BEAT IT -> https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1"
+  },
+  {
+   "check": "760 no blue outside the bell (pixels)",
+   "ok": true,
+   "detail": "{\"size\": [760, 6361], \"colorfulPct\": 1.34, \"bluePct\": 1.09, \"blueOutsideBell\": 0, \"blueOutsideBbox\": null}"
+  },
+  {
+   "check": "760 no blue in computed styles",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 zero radius everywhere",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 shadows are hard 2px/3px",
+   "ok": true,
+   "detail": "[\"rgb(10, 11, 13) 2px 2px 0px 0px\"]"
+  },
+  {
+   "check": "760 gradients only on the graph paper",
+   "ok": true,
+   "detail": "[[\"header#floor.floor\", \"linear-gradient(rgb(222, 225, 231) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(9\"]]"
+  },
+  {
+   "check": "760 no filters",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 only Doto and IBM Plex Mono",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 no Doto under 28px",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 colors on the grey ramp",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 motion uses steps()",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 no centered copy",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 no em dash on the page",
+   "ok": true,
+   "detail": "em 0 en 0"
+  },
+  {
+   "check": "760 no banned words on the page",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "760 no emoji on the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "760 clock in the first viewport",
+   "ok": true,
+   "detail": "{\"top\": 605, \"bottom\": 687, \"left\": 24, \"right\": 736}"
+  },
+  {
+   "check": "390 scrollWidth == innerWidth",
+   "ok": true,
+   "detail": "390 vs 390"
+  },
+  {
+   "check": "390 no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "390 no failed requests",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "390 no element past the viewport edge (outside scroll boxes)",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 Doto loaded",
+   "ok": true,
+   "detail": "[[\"Doto\", \"100 900\", \"normal\", \"unloaded\"], [\"Doto\", \"100 900\", \"normal\", \"loaded\"], [\"IBM Plex Mono\", \"400\", \"normal\", \"unloaded\"], [\"IBM Plex Mono\", \"400\", \"normal\", \"unloaded\"]]"
+  },
+  {
+   "check": "390 IBM Plex Mono loaded",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "390 countdown moved over 2s",
+   "ok": true,
+   "detail": "23:16 -> 23:14 in 2.07s"
+  },
+  {
+   "check": "390 tape scrolls",
+   "ok": true,
+   "detail": "matrix(1, 0, 0, 1, -130.001, 0) -> matrix(1, 0, 0, 1, -255.002, 0) 163.5s steps(1963)"
+  },
+  {
+   "check": "390 LEADING NOW shows a name",
+   "ok": true,
+   "detail": "LEADING NOW · 11:00 TO 12:00 | ringer.base.eth"
+  },
+  {
+   "check": "390 LEADING NOW shows a number",
+   "ok": true,
+   "detail": "1,240.00 NVDAc"
+  },
+  {
+   "check": "390 BEAT IT points at a buy URL",
+   "ok": true,
+   "detail": "BEAT IT -> https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1"
+  },
+  {
+   "check": "390 no blue outside the bell (pixels)",
+   "ok": true,
+   "detail": "{\"size\": [390, 7810], \"colorfulPct\": 1.36, \"bluePct\": 1.11, \"blueOutsideBell\": 0, \"blueOutsideBbox\": null}"
+  },
+  {
+   "check": "390 no blue in computed styles",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 zero radius everywhere",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 shadows are hard 2px/3px",
+   "ok": true,
+   "detail": "[\"rgb(10, 11, 13) 2px 2px 0px 0px\"]"
+  },
+  {
+   "check": "390 gradients only on the graph paper",
+   "ok": true,
+   "detail": "[[\"header#floor.floor\", \"linear-gradient(rgb(222, 225, 231) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(9\"]]"
+  },
+  {
+   "check": "390 no filters",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 only Doto and IBM Plex Mono",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 no Doto under 28px",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 colors on the grey ramp",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 motion uses steps()",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 no centered copy",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 no em dash on the page",
+   "ok": true,
+   "detail": "em 0 en 0"
+  },
+  {
+   "check": "390 no banned words on the page",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 no emoji on the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "390 clock in the first viewport",
+   "ok": true,
+   "detail": "{\"top\": 526, \"bottom\": 584, \"left\": 16, \"right\": 374}"
+  },
+  {
+   "check": "1440 closing: countdown under 10s at load",
+   "ok": true,
+   "detail": "clock 00:09 state OPEN market open meta NEW YORK 3:59:50 PM ET · MARKET OPEN (0.8s after nav)"
+  },
+  {
+   "check": "1440 closing: rings at 16:00",
+   "ok": true,
+   "detail": "state CLOSING kind close market closed meta NEW YORK · CLOSING BELL · DROPPING 1,204.55 NVDAc EST bellShown day anim swing clock 00:00:00"
+  },
+  {
+   "check": "1440 closing: blue bell swings on the dark page",
+   "ok": true,
+   "detail": "day swing closed bg rgb(10, 11, 13)"
+  },
+  {
+   "check": "1440 closing: silence after the ring",
+   "ok": true,
+   "detail": "state SILENCE market closed bell night tape SILENCE next OPENING BELL · FRI 9:30 · FIRST BELL plate LAST BELL · TUE 11:00 | 0x8d56…ca00"
+  },
+  {
+   "check": "1440 closing: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "390 closing: countdown under 10s at load",
+   "ok": true,
+   "detail": "clock 00:09 state OPEN market open meta NEW YORK 3:59:50 PM ET · MARKET OPEN (0.8s after nav)"
+  },
+  {
+   "check": "390 closing: rings at 16:00",
+   "ok": true,
+   "detail": "state CLOSING kind close market closed meta NEW YORK · CLOSING BELL · DROPPING 1,204.55 NVDAc EST bellShown day anim swing clock 00:00:00"
+  },
+  {
+   "check": "390 closing: blue bell swings on the dark page",
+   "ok": true,
+   "detail": "day swing closed bg rgb(10, 11, 13)"
+  },
+  {
+   "check": "390 closing: silence after the ring",
+   "ok": true,
+   "detail": "state SILENCE market closed bell night tape SILENCE next OPENING BELL · FRI 9:30 · FIRST BELL plate LAST BELL · TUE 11:00 | 0x8d56…ca00"
+  },
+  {
+   "check": "390 closing: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "1440 theme=closed is dark",
+   "ok": true,
+   "detail": "market closed bg rgb(10, 11, 13) bell night tapeLabel TAPE state OPEN"
+  },
+  {
+   "check": "1440 theme=closed: no blue outside the bell",
+   "ok": true,
+   "detail": "{\"size\": [1440, 5037], \"colorfulPct\": 1.76, \"bluePct\": 0.12, \"blueOutsideBell\": 0, \"blueOutsideBbox\": null}"
+  },
+  {
+   "check": "1440 theme=closed: colors on the ramp",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "1440 theme=closed: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "390 theme=closed is dark",
+   "ok": true,
+   "detail": "market closed bg rgb(10, 11, 13) bell night tapeLabel TAPE state OPEN"
+  },
+  {
+   "check": "390 theme=closed: no blue outside the bell",
+   "ok": true,
+   "detail": "{\"size\": [390, 7810], \"colorfulPct\": 1.36, \"bluePct\": 0.09, \"blueOutsideBell\": 0, \"blueOutsideBbox\": null}"
+  },
+  {
+   "check": "390 theme=closed: colors on the ramp",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "390 theme=closed: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "1440 ?demo=ring shows ringing",
+   "ok": true,
+   "detail": "bell ringing state RINGING meta NEW YORK · BELL 2:00 · RINGING marks rung,rung,rung,rung,rung,ringing,next,pending anim swing plate BELL 2:00 · SETTLING"
+  },
+  {
+   "check": "1440 ?demo=ring: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "390 ?demo=ring shows ringing",
+   "ok": true,
+   "detail": "bell ringing state RINGING meta NEW YORK · BELL 2:00 · RINGING marks rung,rung,rung,rung,rung,ringing,next,pending anim swing plate BELL 2:00 · SETTLING"
+  },
+  {
+   "check": "390 ?demo=ring: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "1440 ?t=2026-09-08T11:36:41-04:00&demo=ring shows ringing",
+   "ok": true,
+   "detail": "bell ringing state RINGING meta NEW YORK · BELL 11:00 · RINGING marks rung,rung,ringing,next,pending,pending,pending,pending anim swing plate BELL 11:00 · SETTLING"
+  },
+  {
+   "check": "1440 ?t=2026-09-08T11:36:41-04:00&demo=ring: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "live: preview toggle flips and restores",
+   "ok": true,
+   "detail": "open -> closed (PREVIEW OFF) -> open"
+  },
+  {
+   "check": "live: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "reduced motion: tape static and scrollable, colon solid",
+   "ok": true,
+   "detail": "{\"tape\": \"none\", \"overflow\": \"auto\", \"colon\": \"none\"}"
+  }
+ ]
+}

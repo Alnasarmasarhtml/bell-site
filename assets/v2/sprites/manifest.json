@@ -1,0 +1,85 @@
+{
+ "trader-a": {
+  "frames": [
+   "trader-a-1.png",
+   "trader-a-2.png",
+   "trader-a-3.png",
+   "trader-a-4.png"
+  ],
+  "side": 542,
+  "small_side": 271,
+  "facing": "right",
+  "source": "gpt-image-2 4k"
+ },
+ "trader-b": {
+  "frames": [
+   "trader-b-1.png",
+   "trader-b-2.png",
+   "trader-b-3.png",
+   "trader-b-4.png"
+  ],
+  "side": 535,
+  "small_side": 267,
+  "facing": "right",
+  "source": "gpt-image-2 4k"
+ },
+ "trader-c": {
+  "frames": [
+   "trader-c-1.png",
+   "trader-c-2.png",
+   "trader-c-3.png",
+   "trader-c-4.png"
+  ],
+  "side": 591,
+  "small_side": 295,
+  "facing": "right",
+  "source": "gpt-image-2 4k"
+ },
+ "bell-run": {
+  "frames": [
+   "bell-run-1.png",
+   "bell-run-2.png",
+   "bell-run-3.png",
+   "bell-run-4.png"
+  ],
+  "side": 535,
+  "small_side": 267,
+  "facing": "right",
+  "source": "gpt-image-2 4k"
+ },
+ "bell-hop": {
+  "frames": [
+   "bell-hop-1.png",
+   "bell-hop-2.png",
+   "bell-hop-3.png",
+   "bell-hop-4.png"
+  ],
+  "side": 624,
+  "small_side": 312,
+  "facing": "right",
+  "source": "gpt-image-2 4k"
+ },
+ "coin": {
+  "frames": [
+   "coin-1.png",
+   "coin-2.png",
+   "coin-3.png",
+   "coin-4.png",
+   "coin-5.png",
+   "coin-6.png"
+  ],
+  "side": 390,
+  "small_side": 195,
+  "facing": "right",
+  "source": "gpt-image-2 4k"
+ },
+ "chip": {
+  "frames": [
+   "chip-1.png"
+  ],
+  "side": 364,
+  "small_side": 182,
+  "facing": "right",
+  "source": "gpt-image-2 4k"
+ }
+}

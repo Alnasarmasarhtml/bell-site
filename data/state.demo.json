@@ -1,0 +1,1067 @@
+{
+  "v": 1,
+  "generated_at": "2026-09-08T15:36:41.000Z",
+  "generated_block": "34120118",
+  "bot": {
+    "live": false,
+    "mode": "demo",
+    "poll_ms": 15000
+  },
+  "token": {
+    "symbol": "BELL",
+    "address": "0xBE11000000000000000000000000000000000BE1",
+    "decimals": 18,
+    "pool": "0xA6350000000000000000000000000000000020B1",
+    "bell_is_token0": true,
+    "quote": {
+      "symbol": "NVDAc",
+      "address": "0xb20000000000000000000078ee7ce2fe4908108c",
+      "decimals": 8
+    },
+    "launcher": "0x4714f6EC81639Ca59EEBE634490a4d8671DCe7B4",
+    "locker": "0x71D1D363176723f85d98B8B430DF33cde89f0A7f",
+    "launched_at": "2026-08-31T18:12:40.000Z",
+    "launch_block": "33780412",
+    "total_supply": "1000000000"
+  },
+  "market": {
+    "state": "open",
+    "phase": "race",
+    "day": "2026-09-08",
+    "wall": "11:36:41 AM",
+    "offset_min": -240,
+    "market_day": true,
+    "early_close": false,
+    "closure": null,
+    "next_ring": {
+      "index": 3,
+      "kind": "hour",
+      "at": "2026-09-08T16:00:00.000Z",
+      "wall": "12:00 PM",
+      "name": "FOURTH BELL",
+      "day": "2026-09-08"
+    },
+    "last_ring": {
+      "index": 2,
+      "kind": "hour",
+      "at": "2026-09-08T15:00:00.000Z",
+      "wall": "11:00 AM",
+      "name": "THIRD BELL",
+      "day": "2026-09-08"
+    },
+    "seconds_to_next": 1399,
+    "silence": null,
+    "override": null
+  },
+  "price": {
+    "bell_nvdac": "0.0000412",
+    "bell_usd": "0.00934",
+    "nvdac_usd": "226.69",
+    "mcap_usd": "9340000",
+    "holders": 3412
+  },
+  "bells": [
+    {
+      "index": 0,
+      "kind": "open",
+      "at": "2026-09-08T13:30:00.000Z",
+      "wall": "9:30 AM",
+      "name": "FIRST BELL",
+      "state": "rung",
+      "winner": null,
+      "gap_revealed_nvdac": "312.40"
+    },
+    {
+      "index": 1,
+      "kind": "hour",
+      "at": "2026-09-08T14:00:00.000Z",
+      "wall": "10:00 AM",
+      "name": "SECOND BELL",
+      "state": "rung",
+      "winner": {
+        "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+        "name": "ringer.base.eth",
+        "bought_nvdac": "1240.00",
+        "bought_bell": "30100000",
+        "buys": 3,
+        "prize_nvdac": "4.12",
+        "prize_tx": "0x615f6800f74f7800536648005c7cd8007af82800e7d93800368d0800627c9800"
+      }
+    },
+    {
+      "index": 2,
+      "kind": "hour",
+      "at": "2026-09-08T15:00:00.000Z",
+      "wall": "11:00 AM",
+      "name": "THIRD BELL",
+      "state": "rung",
+      "winner": {
+        "address": "0x8d56ea00a54dd200841e9a00aff3c2003be5ca00",
+        "name": null,
+        "bought_nvdac": "402.50",
+        "bought_bell": "9700000",
+        "buys": 1,
+        "prize_nvdac": "3.80",
+        "prize_tx": "0xa325b7007ed11c005d911c00b5511c0092111c000fd11c001a911c409fe4b780"
+      }
+    },
+    {
+      "index": 3,
+      "kind": "hour",
+      "at": "2026-09-08T16:00:00.000Z",
+      "wall": "12:00 PM",
+      "name": "FOURTH BELL",
+      "state": "next",
+      "winner": null
+    },
+    {
+      "index": 4,
+      "kind": "hour",
+      "at": "2026-09-08T17:00:00.000Z",
+      "wall": "1:00 PM",
+      "name": "FIFTH BELL",
+      "state": "pending",
+      "winner": null
+    },
+    {
+      "index": 5,
+      "kind": "hour",
+      "at": "2026-09-08T18:00:00.000Z",
+      "wall": "2:00 PM",
+      "name": "SIXTH BELL",
+      "state": "pending",
+      "winner": null
+    },
+    {
+      "index": 6,
+      "kind": "hour",
+      "at": "2026-09-08T19:00:00.000Z",
+      "wall": "3:00 PM",
+      "name": "SEVENTH BELL",
+      "state": "pending",
+      "winner": null
+    },
+    {
+      "index": 7,
+      "kind": "close",
+      "at": "2026-09-08T20:00:00.000Z",
+      "wall": "4:00 PM",
+      "name": "EIGHT BELLS",
+      "state": "pending",
+      "winner": null,
+      "drop": null
+    }
+  ],
+  "race": {
+    "index": 3,
+    "start": "2026-09-08T15:00:00.000Z",
+    "end": "2026-09-08T16:00:00.000Z",
+    "wall": "11:00 TO 12:00 PM",
+    "ends_at": {
+      "index": 3,
+      "kind": "hour",
+      "at": "2026-09-08T16:00:00.000Z",
+      "wall": "12:00 PM",
+      "name": "FOURTH BELL",
+      "day": "2026-09-08"
+    },
+    "prize_nvdac_est": "4.40",
+    "buy_count": 41,
+    "sell_count": 9,
+    "total_buy_nvdac": "3120.50",
+    "total_sell_nvdac": "610.20",
+    "leader": {
+      "rank": 1,
+      "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+      "name": "ringer.base.eth",
+      "bought_nvdac": "1240.00",
+      "bought_usd": "281096",
+      "bought_bell": "30100000",
+      "buys": 3,
+      "biggest_nvdac": "812.00",
+      "last_tx": "0x1f885e00adb43600a22f2e00021ac60031ba7e38d62cfe005a8c5600d3f4ce00",
+      "last_at": "2026-09-08T15:21:04.000Z"
+    },
+    "buyers": [
+      {
+        "rank": 1,
+        "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+        "name": "ringer.base.eth",
+        "bought_nvdac": "1240.00",
+        "bought_usd": "281096",
+        "bought_bell": "30100000",
+        "buys": 3,
+        "biggest_nvdac": "812.00",
+        "last_tx": "0x1f885e00adb43600a22f2e00021ac60031ba7e38d62cfe005a8c5600d3f4ce00",
+        "last_at": "2026-09-08T15:21:04.000Z"
+      },
+      {
+        "rank": 2,
+        "address": "0x8d56ea00a54dd200841e9a00aff3c2003be5ca00",
+        "name": null,
+        "bought_nvdac": "402.50",
+        "bought_usd": "91243",
+        "bought_bell": "9700000",
+        "buys": 1,
+        "biggest_nvdac": "402.50",
+        "last_tx": "0x7186c80017535800634ca840046753008d4887401c97460067bcfe40a66ff100",
+        "last_at": "2026-09-08T15:09:40.000Z"
+      },
+      {
+        "rank": 3,
+        "address": "0x7e891e00db85f6008cfdee007aa2860060073e00",
+        "name": "noonbell.base.eth",
+        "bought_nvdac": "318.20",
+        "bought_usd": "72133",
+        "bought_bell": "7690000",
+        "buys": 2,
+        "biggest_nvdac": "200.00",
+        "last_tx": "0x44363e0085fc960006400e00018a264094f9f9780341f8004ca6c83887548000",
+        "last_at": "2026-09-08T15:30:12.000Z"
+      },
+      {
+        "rank": 4,
+        "address": "0xb8bd800065afb000f36e2000f3a3d000861fc000",
+        "name": null,
+        "bought_nvdac": "212.00",
+        "bought_usd": "48058",
+        "bought_bell": "5110000",
+        "buys": 4,
+        "biggest_nvdac": "80.00",
+        "last_tx": "0x3f60d200e8359a004fbec2001f54ca0068a63200ddff7a00b8f322001fe1aa00",
+        "last_at": "2026-09-08T15:33:51.000Z"
+      },
+      {
+        "rank": 5,
+        "address": "0xf21c200067b9d000a77dc000210af00006c86000",
+        "name": null,
+        "bought_nvdac": "188.75",
+        "bought_usd": "42788",
+        "bought_bell": "4560000",
+        "buys": 1,
+        "biggest_nvdac": "188.75",
+        "last_tx": "0xe53012800a1b1000ec6600402d01cc007dec0c00d1294c006bbd8c00e85ccc00",
+        "last_at": "2026-09-08T15:04:22.000Z"
+      },
+      {
+        "rank": 6,
+        "address": "0x71c1f4003fed1400ec09b400acf9d400bcf77400",
+        "name": "tendies.base.eth",
+        "bought_nvdac": "150.00",
+        "bought_usd": "34004",
+        "bought_bell": "3620000",
+        "buys": 1,
+        "biggest_nvdac": "150.00",
+        "last_tx": "0x4489d20098aa9a00178fc200e151ca4088f2ce009e25e600c6371e00649bf600",
+        "last_at": "2026-09-08T15:27:58.000Z"
+      },
+      {
+        "rank": 7,
+        "address": "0x029fd6e0e2c6ed9886a7aa00e72f9200d9bd5a00",
+        "name": null,
+        "bought_nvdac": "96.40",
+        "bought_usd": "21853",
+        "bought_bell": "2330000",
+        "buys": 2,
+        "biggest_nvdac": "60.40",
+        "last_tx": "0xfa148000b9bab000161d20000a26d040777a5b806bfa260095165e00ff2a3600",
+        "last_at": "2026-09-08T15:35:10.000Z"
+      },
+      {
+        "rank": 8,
+        "address": "0xf4263e501d251800461b684014ef130073954740",
+        "name": null,
+        "bought_nvdac": "71.10",
+        "bought_usd": "16118",
+        "bought_bell": "1720000",
+        "buys": 1,
+        "biggest_nvdac": "71.10",
+        "last_tx": "0xa307da006ac40200ba110a00264d720013b5ba009f0c6240bbb58600df1e3e00",
+        "last_at": "2026-09-08T15:12:33.000Z"
+      },
+      {
+        "rank": 9,
+        "address": "0x82bf52d0d391d200ef129a0091d7c200e1f9ca00",
+        "name": null,
+        "bought_nvdac": "44.00",
+        "bought_usd": "9974",
+        "bought_bell": "1060000",
+        "buys": 1,
+        "biggest_nvdac": "44.00",
+        "last_tx": "0xd2118a008583f20038ea3a007566e20021aa6a003ddb5200955e1a0060fd4200",
+        "last_at": "2026-09-08T15:18:07.000Z"
+      },
+      {
+        "rank": 10,
+        "address": "0xbd647080c10b1600966c8e00f37ca6000aa6de00",
+        "name": "seatholder.base.eth",
+        "bought_nvdac": "25.50",
+        "bought_usd": "5781",
+        "bought_bell": "615000",
+        "buys": 1,
+        "biggest_nvdac": "25.50",
+        "last_tx": "0x871599006ed05400a04bf4001caf140006a3b4405e1f6f80645baa0024d39200",
+        "last_at": "2026-09-08T15:24:45.000Z"
+      }
+    ],
+    "from_block": "34118900",
+    "to_block": "34120118"
+  },
+  "last_race": {
+    "day": "2026-09-08",
+    "index": 2,
+    "wall": "11:00 AM",
+    "winner": {
+      "address": "0x8d56ea00a54dd200841e9a00aff3c2003be5ca00",
+      "name": null,
+      "bought_nvdac": "402.50",
+      "prize_nvdac": "3.80",
+      "prize_tx": "0xa325b7007ed11c005d911c00b5511c0092111c000fd11c001a911c409fe4b780"
+    },
+    "buy_count": 22,
+    "total_buy_nvdac": "1402.10"
+  },
+  "desk": {
+    "address": "0xD35C000000000000000000000000000000000D35",
+    "nvdac": "812.30",
+    "bell": "9520000",
+    "eth": "0.0412",
+    "fees_today_nvdac": "812.30",
+    "fees_today_bell": "9520000",
+    "bell_as_nvdac_est": "392.25",
+    "pot_est_nvdac": "1204.55",
+    "pot_est_usd": "273059",
+    "holders_eligible": 3412,
+    "circulating_bell": "412300000",
+    "per_million_bell_nvdac_est": "2.9215",
+    "holders_indexed_to_block": "34120100"
+  },
+  "drop": {
+    "today": {
+      "day": "2026-09-08",
+      "at": "2026-09-08T20:00:00.000Z",
+      "pot_est_nvdac": "1204.55",
+      "pot_est_usd": "273059",
+      "holders_eligible": 3412,
+      "circulating_bell": "412300000",
+      "per_million_bell_nvdac_est": "2.9215",
+      "settled": false
+    },
+    "last": {
+      "day": "2026-09-04",
+      "at": "2026-09-04T20:00:41.000Z",
+      "wall": "4:00 PM",
+      "kind": "drop",
+      "fees_nvdac": "790.00",
+      "fees_bell": "8100000",
+      "swapped_nvdac": "380.12",
+      "pot_nvdac": "1170.12",
+      "dropped_nvdac": "1170.10",
+      "dropped_usd": "265250",
+      "dust_nvdac": "0.02",
+      "holders_paid": 3390,
+      "holders_failed": 0,
+      "holders_skipped": 22,
+      "snapshot_block": "34072800",
+      "per_million_bell_nvdac": "2.8721",
+      "txs": [
+        "0xd046b600fd8fae005131480045ebd800b13b28006c603800c6080800f3db9800",
+        "0x120d0400bec2e4406406e000ef2d900018468000d104b040fe32bc0018e23c00"
+      ],
+      "tx": "0xd046b600fd8fae005131480045ebd800b13b28006c603800c6080800f3db9800",
+      "record": false,
+      "dry_run": false,
+      "file": "drops/2026-09-04.json"
+    },
+    "gap": {
+      "state": "revealed",
+      "from": "2026-09-04T20:00:00.000Z",
+      "to": "2026-09-08T13:30:00.000Z",
+      "kind": "holiday",
+      "reason": "Labor Day",
+      "nvdac_est": "312.40",
+      "usd_est": "70818",
+      "revealed_at": "2026-09-08T13:30:02.000Z"
+    },
+    "record": {
+      "day": "2026-09-02",
+      "dropped_nvdac": "2210.08"
+    },
+    "ledger": [
+      {
+        "day": "2026-09-04",
+        "at": "2026-09-04T20:00:41.000Z",
+        "wall": "4:00 PM",
+        "kind": "drop",
+        "fees_nvdac": "790.00",
+        "fees_bell": "8100000",
+        "swapped_nvdac": "380.12",
+        "pot_nvdac": "1170.12",
+        "dropped_nvdac": "1170.10",
+        "dropped_usd": "265250",
+        "dust_nvdac": "0.02",
+        "holders_paid": 3390,
+        "holders_failed": 0,
+        "holders_skipped": 22,
+        "snapshot_block": "34072800",
+        "per_million_bell_nvdac": "2.8721",
+        "txs": [
+          "0xd046b600fd8fae005131480045ebd800b13b28006c603800c6080800f3db9800",
+          "0x120d0400bec2e4406406e000ef2d900018468000d104b040fe32bc0018e23c00"
+        ],
+        "tx": "0xd046b600fd8fae005131480045ebd800b13b28006c603800c6080800f3db9800",
+        "record": false,
+        "dry_run": false,
+        "file": "drops/2026-09-04.json"
+      },
+      {
+        "day": "2026-09-03",
+        "at": "2026-09-03T20:00:41.000Z",
+        "wall": "4:00 PM",
+        "kind": "drop",
+        "fees_nvdac": "640.10",
+        "fees_bell": "6200000",
+        "swapped_nvdac": "291.30",
+        "pot_nvdac": "931.40",
+        "dropped_nvdac": "931.38",
+        "dropped_usd": "211135",
+        "dust_nvdac": "0.02",
+        "holders_paid": 3301,
+        "holders_failed": 0,
+        "holders_skipped": 18,
+        "snapshot_block": "34029600",
+        "per_million_bell_nvdac": "2.3174",
+        "txs": [
+          "0xe6da4e0022b766008d2a9e004b497600b43b6e00ecd206007740be0074751600",
+          "0x28a09d00aa390900d10704003b34e400aafd4400908e2400b37d8400c2a96400"
+        ],
+        "tx": "0xe6da4e0022b766008d2a9e004b497600b43b6e00ecd206007740be0074751600",
+        "record": false,
+        "dry_run": false,
+        "file": "drops/2026-09-03.json"
+      },
+      {
+        "day": "2026-09-02",
+        "at": "2026-09-02T20:00:41.000Z",
+        "wall": "4:00 PM",
+        "kind": "drop",
+        "fees_nvdac": "1520.00",
+        "fees_bell": "14200000",
+        "swapped_nvdac": "690.10",
+        "pot_nvdac": "2210.10",
+        "dropped_nvdac": "2210.08",
+        "dropped_usd": "501003",
+        "dust_nvdac": "0.02",
+        "holders_paid": 3120,
+        "holders_failed": 0,
+        "holders_skipped": 15,
+        "snapshot_block": "33986400",
+        "per_million_bell_nvdac": "5.6208",
+        "txs": [
+          "0xfd6de7000e2d8c00320ccc406f2ea700b7bf4b00874d2000db96d0005296c000",
+          "0x3f34360095af2e00af9ac600113a7e009c4bd6409d11ea0051ecd20075d19a00"
+        ],
+        "tx": "0xfd6de7000e2d8c00320ccc406f2ea700b7bf4b00874d2000db96d0005296c000",
+        "record": true,
+        "dry_run": false,
+        "file": "drops/2026-09-02.json"
+      },
+      {
+        "day": "2026-09-01",
+        "at": "2026-09-01T20:00:41.000Z",
+        "wall": "4:00 PM",
+        "kind": "drop",
+        "fees_nvdac": "402.20",
+        "fees_bell": "3900000",
+        "swapped_nvdac": "180.40",
+        "pot_nvdac": "582.60",
+        "dropped_nvdac": "582.58",
+        "dropped_usd": "132065",
+        "dust_nvdac": "0.02",
+        "holders_paid": 2205,
+        "holders_failed": 0,
+        "holders_skipped": 9,
+        "snapshot_block": "33943200",
+        "per_million_bell_nvdac": "1.5327",
+        "txs": [
+          "0x14018000f9a3b040bbe5bc0068193c006b06bc0007263c00198fbc40870ed780",
+          "0x55c7cf00812553008e2e8800e74018008d9a6800c66e7800f5994800f633d800"
+        ],
+        "tx": "0x14018000f9a3b040bbe5bc0068193c006b06bc0007263c00198fbc40870ed780",
+        "record": false,
+        "dry_run": false,
+        "file": "drops/2026-09-01.json"
+      },
+      {
+        "day": "2026-08-31",
+        "at": "2026-08-31T20:00:41.000Z",
+        "wall": "4:00 PM",
+        "kind": "drop",
+        "fees_nvdac": "31.40",
+        "fees_bell": "410000",
+        "swapped_nvdac": "9.80",
+        "pot_nvdac": "41.20",
+        "dropped_nvdac": "41.18",
+        "dropped_usd": "9335",
+        "dust_nvdac": "0.02",
+        "holders_paid": 412,
+        "holders_failed": 0,
+        "holders_skipped": 2,
+        "snapshot_block": "35239200",
+        "per_million_bell_nvdac": "0.3420",
+        "txs": [
+          "0x42c65d403e5f6400f715c4006dfca400a68a04000dfbe4000bb844402bc0bf80",
+          "0x848cabc0e2b9d000067dc000940af0406f5bfc0058f27c00a906fc0000c17c00"
+        ],
+        "tx": "0x42c65d403e5f6400f715c4006dfca400a68a04000dfbe4000bb844402bc0bf80",
+        "record": false,
+        "dry_run": false,
+        "file": "drops/2026-08-31.json"
+      }
+    ]
+  },
+  "ringers": {
+    "count": 14,
+    "bells_rung": 37,
+    "today": [
+      {
+        "index": 1,
+        "wall": "10:00 AM",
+        "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+        "name": "ringer.base.eth",
+        "bought_nvdac": "1240.00",
+        "prize_nvdac": "4.12",
+        "tx": "0x615f6800f74f7800536648005c7cd8007af82800e7d93800368d0800627c9800"
+      },
+      {
+        "index": 2,
+        "wall": "11:00 AM",
+        "address": "0x8d56ea00a54dd200841e9a00aff3c2003be5ca00",
+        "name": null,
+        "bought_nvdac": "402.50",
+        "prize_nvdac": "3.80",
+        "tx": "0xa325b7007ed11c005d911c00b5511c0092111c000fd11c001a911c409fe4b780"
+      }
+    ],
+    "wall": [
+      {
+        "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+        "name": "ringer.base.eth",
+        "bells": 7,
+        "closing_bells": 1,
+        "won_nvdac_total": "31.20",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-08-31T18:00:00.000Z",
+        "last_at": "2026-09-08T14:00:00.000Z",
+        "best": {
+          "day": "2026-09-08",
+          "wall": "10:00 AM",
+          "bought_nvdac": "1240.00"
+        }
+      },
+      {
+        "address": "0x4bc35a702a5bd2006f149a00aeb1c20096cbca00",
+        "name": "gavel.base.eth",
+        "bells": 5,
+        "closing_bells": 3,
+        "won_nvdac_total": "24.90",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-09-01T20:00:00.000Z",
+        "last_at": "2026-09-04T20:00:00.000Z",
+        "best": {
+          "day": "2026-09-02",
+          "wall": "4:00 PM",
+          "bought_nvdac": "2101.00"
+        }
+      },
+      {
+        "address": "0xb90651d0cb7e66000be59e003ae876409e820900",
+        "name": "powerhour.base.eth",
+        "bells": 4,
+        "closing_bells": 0,
+        "won_nvdac_total": "16.10",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-09-01T19:00:00.000Z",
+        "last_at": "2026-09-04T19:00:00.000Z",
+        "best": {
+          "day": "2026-09-03",
+          "wall": "3:00 PM",
+          "bought_nvdac": "980.40"
+        }
+      },
+      {
+        "address": "0x7e891e00db85f6008cfdee007aa2860060073e00",
+        "name": "noonbell.base.eth",
+        "bells": 4,
+        "closing_bells": 0,
+        "won_nvdac_total": "14.02",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-09-01T16:00:00.000Z",
+        "last_at": "2026-09-04T16:00:00.000Z",
+        "best": {
+          "day": "2026-09-02",
+          "wall": "12:00 PM",
+          "bought_nvdac": "610.00"
+        }
+      },
+      {
+        "address": "0xaa9de2806f3ca0009590500086d24000f7057000",
+        "name": "deskhead.base.eth",
+        "bells": 3,
+        "closing_bells": 1,
+        "won_nvdac_total": "12.40",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-09-02T14:00:00.000Z",
+        "last_at": "2026-09-03T20:00:00.000Z",
+        "best": {
+          "day": "2026-09-03",
+          "wall": "4:00 PM",
+          "bought_nvdac": "1402.30"
+        }
+      },
+      {
+        "address": "0x5f47a570ca89c1007b755c007b005c00a32f5c00",
+        "name": "shortbell.base.eth",
+        "bells": 3,
+        "closing_bells": 0,
+        "won_nvdac_total": "9.15",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-09-01T14:00:00.000Z",
+        "last_at": "2026-09-04T14:00:00.000Z",
+        "best": {
+          "day": "2026-09-04",
+          "wall": "10:00 AM",
+          "bought_nvdac": "512.00"
+        }
+      },
+      {
+        "address": "0x8d56ea00a54dd200841e9a00aff3c2003be5ca00",
+        "name": null,
+        "bells": 2,
+        "closing_bells": 0,
+        "won_nvdac_total": "7.60",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-09-03T15:00:00.000Z",
+        "last_at": "2026-09-08T15:00:00.000Z",
+        "best": {
+          "day": "2026-09-08",
+          "wall": "11:00 AM",
+          "bought_nvdac": "402.50"
+        }
+      },
+      {
+        "address": "0xb8bd800065afb000f36e2000f3a3d000861fc000",
+        "name": null,
+        "bells": 2,
+        "closing_bells": 0,
+        "won_nvdac_total": "6.90",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-09-02T18:00:00.000Z",
+        "last_at": "2026-09-04T18:00:00.000Z",
+        "best": {
+          "day": "2026-09-04",
+          "wall": "2:00 PM",
+          "bought_nvdac": "333.33"
+        }
+      },
+      {
+        "address": "0xbd647080c10b1600966c8e00f37ca6000aa6de00",
+        "name": "seatholder.base.eth",
+        "bells": 2,
+        "closing_bells": 0,
+        "won_nvdac_total": "6.21",
+        "rank": "EIGHT BELLS",
+        "first_at": "2026-09-01T17:00:00.000Z",
+        "last_at": "2026-09-03T17:00:00.000Z",
+        "best": {
+          "day": "2026-09-01",
+          "wall": "1:00 PM",
+          "bought_nvdac": "290.00"
+        }
+      },
+      {
+        "address": "0x71c1f4003fed1400ec09b400acf9d400bcf77400",
+        "name": "tendies.base.eth",
+        "bells": 1,
+        "closing_bells": 0,
+        "won_nvdac_total": "3.40",
+        "rank": "BELL RINGER",
+        "first_at": "2026-09-03T18:00:00.000Z",
+        "last_at": "2026-09-03T18:00:00.000Z",
+        "best": {
+          "day": "2026-09-03",
+          "wall": "2:00 PM",
+          "bought_nvdac": "260.75"
+        }
+      },
+      {
+        "address": "0xf21c200067b9d000a77dc000210af00006c86000",
+        "name": null,
+        "bells": 1,
+        "closing_bells": 0,
+        "won_nvdac_total": "3.10",
+        "rank": "BELL RINGER",
+        "first_at": "2026-09-02T16:00:00.000Z",
+        "last_at": "2026-09-02T16:00:00.000Z",
+        "best": {
+          "day": "2026-09-02",
+          "wall": "12:00 PM",
+          "bought_nvdac": "240.00"
+        }
+      },
+      {
+        "address": "0x029fd6e0e2c6ed9886a7aa00e72f9200d9bd5a00",
+        "name": null,
+        "bells": 1,
+        "closing_bells": 0,
+        "won_nvdac_total": "2.95",
+        "rank": "BELL RINGER",
+        "first_at": "2026-09-04T15:00:00.000Z",
+        "last_at": "2026-09-04T15:00:00.000Z",
+        "best": {
+          "day": "2026-09-04",
+          "wall": "11:00 AM",
+          "bought_nvdac": "221.10"
+        }
+      },
+      {
+        "address": "0x82bf52d0d391d200ef129a0091d7c200e1f9ca00",
+        "name": null,
+        "bells": 1,
+        "closing_bells": 0,
+        "won_nvdac_total": "2.80",
+        "rank": "BELL RINGER",
+        "first_at": "2026-08-31T19:00:00.000Z",
+        "last_at": "2026-08-31T19:00:00.000Z",
+        "best": {
+          "day": "2026-08-31",
+          "wall": "3:00 PM",
+          "bought_nvdac": "96.00"
+        }
+      },
+      {
+        "address": "0xf4263e501d251800461b684014ef130073954740",
+        "name": null,
+        "bells": 1,
+        "closing_bells": 1,
+        "won_nvdac_total": "2.40",
+        "rank": "THE GAVEL",
+        "first_at": "2026-08-31T20:00:00.000Z",
+        "last_at": "2026-08-31T20:00:00.000Z",
+        "best": {
+          "day": "2026-08-31",
+          "wall": "4:00 PM",
+          "bought_nvdac": "88.80"
+        }
+      }
+    ]
+  },
+  "tape": [
+    {
+      "t": "2026-09-08T15:35:10.000Z",
+      "type": "buy",
+      "address": "0x029fd6e0e2c6ed9886a7aa00e72f9200d9bd5a00",
+      "name": null,
+      "nvdac": "36.00",
+      "bell": "873000",
+      "tx": "0x2cee8ec0f991780065804800fd8ed8008ba22800cc3b38005047080002ae9800"
+    },
+    {
+      "t": "2026-09-08T15:34:50.000Z",
+      "type": "sell",
+      "address": "0x82bf52d0d391d200ef129a0091d7c200e1f9ca00",
+      "name": null,
+      "nvdac": "88.10",
+      "bell": "2140000",
+      "tx": "0x7aed9400324034002d2e54005251f400bd3d1400a719b40032c9d40016877400"
+    },
+    {
+      "t": "2026-09-08T15:33:51.000Z",
+      "type": "buy",
+      "address": "0xb8bd800065afb000f36e2000f3a3d000861fc000",
+      "name": null,
+      "nvdac": "80.00",
+      "bell": "1930000",
+      "tx": "0x723ae000d3519000339a80000bc8b0004a1320408f786b0088dfc000f3c4f000"
+    },
+    {
+      "t": "2026-09-08T15:32:07.000Z",
+      "type": "sell",
+      "address": "0xf4263e501d251800461b684014ef130073954740",
+      "name": null,
+      "nvdac": "12.40",
+      "bell": "301000",
+      "tx": "0x77cf4400c1f82400099f8400cb236440101d60000fc21040a8149b809d276600"
+    },
+    {
+      "t": "2026-09-08T15:30:12.000Z",
+      "type": "buy",
+      "address": "0x7e891e00db85f6008cfdee007aa2860060073e00",
+      "name": "noonbell.base.eth",
+      "nvdac": "200.00",
+      "bell": "4830000",
+      "tx": "0x77104d003766f9008cb635006bbac0004503f00035cd6000bbb210008bb10000"
+    },
+    {
+      "t": "2026-09-08T15:27:58.000Z",
+      "type": "buy",
+      "address": "0x71c1f4003fed1400ec09b400acf9d400bcf77400",
+      "name": "tendies.base.eth",
+      "nvdac": "150.00",
+      "bell": "3620000",
+      "tx": "0x7763e00083c69000fb6b8000cdc5b000f8cc2000e0a9d00045adc0001b7af000"
+    },
+    {
+      "t": "2026-09-08T15:26:31.000Z",
+      "type": "sell",
+      "address": "0xbd647080c10b1600966c8e00f37ca6000aa6de00",
+      "name": "seatholder.base.eth",
+      "nvdac": "40.00",
+      "bell": "972000",
+      "tx": "0x4413ea0009c6d20029a39a4021285d005885c900ea34c5002a7e1000e08d0000"
+    },
+    {
+      "t": "2026-09-08T15:24:45.000Z",
+      "type": "buy",
+      "address": "0xbd647080c10b1600966c8e00f37ca6000aa6de00",
+      "name": "seatholder.base.eth",
+      "nvdac": "25.50",
+      "bell": "615000",
+      "tx": "0xb9efa600939dde00a7dbb6002e00ae005f4e460091a7fe00a7eb5600b767ce00"
+    },
+    {
+      "t": "2026-09-08T15:21:04.000Z",
+      "type": "buy",
+      "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+      "name": "ringer.base.eth",
+      "nvdac": "812.00",
+      "bell": "19700000",
+      "tx": "0x52626c0098d02c00860aec00ee8eac0013276c00b2b12c408a6b8800e3391800"
+    },
+    {
+      "t": "2026-09-08T15:18:07.000Z",
+      "type": "buy",
+      "address": "0x82bf52d0d391d200ef129a0091d7c200e1f9ca00",
+      "name": null,
+      "nvdac": "44.00",
+      "bell": "1060000",
+      "tx": "0x04eb9700aa517b40ebbf2a001b3112007360da40b03c9d00efa5080081b49800"
+    },
+    {
+      "t": "2026-09-08T15:15:22.000Z",
+      "type": "sell",
+      "address": "0xf21c200067b9d000a77dc000210af00006c86000",
+      "name": null,
+      "nvdac": "120.00",
+      "bell": "2920000",
+      "tx": "0x9c19ee00718e86006a833e004ac596000dd50e00a1fb26405316fa00bcf4a200"
+    },
+    {
+      "t": "2026-09-08T15:12:33.000Z",
+      "type": "buy",
+      "address": "0xf4263e501d251800461b684014ef130073954740",
+      "name": null,
+      "nvdac": "71.10",
+      "bell": "1720000",
+      "tx": "0xd5e1e80055dff8009decc80012c15800f522a84050855400e05cf40091ec1400"
+    },
+    {
+      "t": "2026-09-08T15:09:40.000Z",
+      "type": "buy",
+      "address": "0x8d56ea00a54dd200841e9a00aff3c2003be5ca00",
+      "name": null,
+      "nvdac": "402.50",
+      "bell": "9700000",
+      "tx": "0xa460d6c0572a2000b2afd000863bc000dbf0f000aeb6600034e710004d420000"
+    },
+    {
+      "t": "2026-09-08T15:06:15.000Z",
+      "type": "buy",
+      "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+      "name": "ringer.base.eth",
+      "nvdac": "228.00",
+      "bell": "5540000",
+      "tx": "0x5ff01200eab3da0057000200979d0a0022e972002a21ba0013086200746dea40"
+    },
+    {
+      "t": "2026-09-08T15:04:22.000Z",
+      "type": "buy",
+      "address": "0xf21c200067b9d000a77dc000210af00006c86000",
+      "name": null,
+      "nvdac": "188.75",
+      "bell": "4560000",
+      "tx": "0x180a2000120fd040d3af5b80d48b260048d35e001ca33600aff22e40b9b56200"
+    },
+    {
+      "t": "2026-09-08T15:02:48.000Z",
+      "type": "buy",
+      "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+      "name": "ringer.base.eth",
+      "nvdac": "200.00",
+      "bell": "4860000",
+      "tx": "0xf9cb80005ca5b0000e2c20003a89d0403ba15b00ef6def004aa0f40088e01400"
+    },
+    {
+      "t": "2026-09-08T15:00:03.000Z",
+      "type": "bell",
+      "index": 2,
+      "wall": "11:00 AM",
+      "day": "2026-09-08",
+      "address": "0x8d56ea00a54dd200841e9a00aff3c2003be5ca00",
+      "name": null,
+      "bought_nvdac": "402.50",
+      "prize_nvdac": "3.80",
+      "tx": "0xa325b7007ed11c005d911c00b5511c0092111c000fd11c001a911c409fe4b780"
+    },
+    {
+      "t": "2026-09-08T14:51:09.000Z",
+      "type": "buy",
+      "address": "0x7e891e00db85f6008cfdee007aa2860060073e00",
+      "name": "noonbell.base.eth",
+      "nvdac": "118.20",
+      "bell": "2880000",
+      "tx": "0x0f1d0860222a012056fa6a803412880001541800c01e6838e403a000f04b5000"
+    },
+    {
+      "t": "2026-09-08T14:44:30.000Z",
+      "type": "sell",
+      "address": "0x71c1f4003fed1400ec09b400acf9d400bcf77400",
+      "name": "tendies.base.eth",
+      "nvdac": "61.00",
+      "bell": "1490000",
+      "tx": "0x2d4c8a0057a2f200221d3a004a1de20075956a0092ea52005ec11a004a244200"
+    },
+    {
+      "t": "2026-09-08T14:31:12.000Z",
+      "type": "buy",
+      "address": "0xb8bd800065afb000f36e2000f3a3d000861fc000",
+      "name": null,
+      "nvdac": "132.00",
+      "bell": "3230000",
+      "tx": "0x4e572c00f285ec0098edac008f9a6c00b9a82c005202ec005726ac00ebdf6c00"
+    },
+    {
+      "t": "2026-09-08T14:20:55.000Z",
+      "type": "buy",
+      "address": "0x4bc35a702a5bd2006f149a00aeb1c20096cbca00",
+      "name": "gavel.base.eth",
+      "nvdac": "365.00",
+      "bell": "8960000",
+      "tx": "0xb94cb58025f6780012814800f4fbd8408c9ec400d751a40065bb040063d8e400"
+    },
+    {
+      "t": "2026-09-08T14:08:41.000Z",
+      "type": "buy",
+      "address": "0x5f47a570ca89c1007b755c007b005c00a32f5c00",
+      "name": "shortbell.base.eth",
+      "nvdac": "90.00",
+      "bell": "2210000",
+      "tx": "0x2190be0058851600415e8e007886a600bbe8de00a9cab600d2c3ae00f0554600"
+    },
+    {
+      "t": "2026-09-08T14:00:03.000Z",
+      "type": "bell",
+      "index": 1,
+      "wall": "10:00 AM",
+      "day": "2026-09-08",
+      "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+      "name": "ringer.base.eth",
+      "bought_nvdac": "1240.00",
+      "prize_nvdac": "4.12",
+      "tx": "0x615f6800f74f7800536648005c7cd8007af82800e7d93800368d0800627c9800"
+    },
+    {
+      "t": "2026-09-08T13:52:19.000Z",
+      "type": "buy",
+      "address": "0x90ed900077068000a8c4b000e95f20001940d000",
+      "name": "ringer.base.eth",
+      "nvdac": "1240.00",
+      "bell": "30100000",
+      "tx": "0x937dd04073855c00f9d05c0001bf5c0034825c389eea840036126400f84cc400"
+    },
+    {
+      "t": "2026-09-08T13:41:02.000Z",
+      "type": "buy",
+      "address": "0xb90651d0cb7e66000be59e003ae876409e820900",
+      "name": "powerhour.base.eth",
+      "nvdac": "410.00",
+      "bell": "10020000",
+      "tx": "0x0a35b980b0652bc084e850003f4a4000121d70004ea8e040a3bb2b00ffcb8000"
+    },
+    {
+      "t": "2026-09-08T13:33:47.000Z",
+      "type": "sell",
+      "address": "0x029fd6e0e2c6ed9886a7aa00e72f9200d9bd5a00",
+      "name": null,
+      "nvdac": "18.00",
+      "bell": "441000",
+      "tx": "0x536e22006040aa002b549200237e5a0038388200b3ab8a008015f20065143a00"
+    },
+    {
+      "t": "2026-09-08T13:30:02.000Z",
+      "type": "open",
+      "day": "2026-09-08",
+      "gap_nvdac": "312.40",
+      "days": 4
+    },
+    {
+      "t": "2026-09-04T20:00:41.000Z",
+      "type": "drop",
+      "day": "2026-09-04",
+      "dropped_nvdac": "1170.10",
+      "holders_paid": 3390,
+      "tx": "0xd046b600fd8fae005131480045ebd800b13b28006c603800c6080800f3db9800",
+      "dry_run": false
+    },
+    {
+      "t": "2026-09-04T20:00:03.000Z",
+      "type": "bell",
+      "index": 7,
+      "wall": "4:00 PM",
+      "day": "2026-09-04",
+      "address": "0x4bc35a702a5bd2006f149a00aeb1c20096cbca00",
+      "name": "gavel.base.eth",
+      "bought_nvdac": "1980.00",
+      "prize_nvdac": "5.90",
+      "tx": "0x4653a200b8f82a00da761200e9c1da0033f60200a05b0a00bfcf72000c0fba00"
+    },
+    {
+      "t": "2026-09-04T19:00:03.000Z",
+      "type": "bell",
+      "index": 6,
+      "wall": "3:00 PM",
+      "day": "2026-09-04",
+      "address": "0xb90651d0cb7e66000be59e003ae876409e820900",
+      "name": "powerhour.base.eth",
+      "bought_nvdac": "702.10",
+      "prize_nvdac": "4.61",
+      "tx": "0x048d5400f7c4f440aac7b000aea62000ba7bd0000017c000c69cf039a719d600"
+    }
+  ],
+  "links": {
+    "site": "https://thebell.wtf",
+    "stonks": "https://www.thestonks.exchange/token/0xBE11000000000000000000000000000000000BE1",
+    "dexscreener": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
+    "basescan_token": "https://basescan.org/token/0xBE11000000000000000000000000000000000BE1",
+    "basescan_pool": "https://basescan.org/address/0xA6350000000000000000000000000000000020B1",
+    "x": null,
+    "telegram": null
+  },
+  "meta": {
+    "schedule_verified_years": [
+      2026,
+      2027
+    ],
+    "exclusions": [
+      "0x71d1d363176723f85d98b8b430df33cde89f0a7f",
+      "0x4714f6ec81639ca59eebe634490a4d8671dce7b4",
+      "0x03a520b32c04bf3beef7beb72e919cf822ed34f1",
+      "0x000000000000000000000000000000000000dead",
+      "0x0000000000000000000000000000000000000000",
+      "0xa6350000000000000000000000000000000020b1",
+      "0xd35c000000000000000000000000000000000d35"
+    ],
+    "hour_bonus_bps": 1000,
+    "min_drop_raw": "1000"
+  }
+}

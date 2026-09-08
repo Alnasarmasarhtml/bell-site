@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" data-market="open" data-bell="" data-next="" data-sound="on" data-floor="still">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$BELL · Ring it. Get paid in NVIDIA.</title>
+<meta name="description" content="Eight bells a day on Wall Street time. Biggest buyer each hour wins NVDAc. At the close, every holder gets NVDAc. A memecoin on Base, launched on The Stonks Exchange, priced in NVDAc.">
+<meta property="og:title" content="$BELL · Ring it. Get paid in NVIDIA.">
+<meta property="og:description" content="Eight bells a day on the New York clock. Biggest buyer each hour wins NVDAc. At the close, every holder gets NVDAc.">
+<meta property="og:image" content="https://thebell.wtf/assets/v2/banner-1500x500.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0000FF">
+<link rel="icon" href="assets/v2/favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/v2/logo-192.png" type="image/png" sizes="192x192">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono:wght@400;500;600;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 1. THE TICKER BAR. 36px. Live cell on the left, the tape scrolls right to left in steps. -->
+<div class="ticker" id="ticker" aria-label="Ticker">
+  <div class="ticker__live" id="ticker-live">BELL LIVE</div>
+  <div class="ticker__scroll"><div class="ticker__track" id="ticker-track"></div></div>
+</div>
+
+<!-- 2. NAV. A translucent navy bar floating under the ticker, full width. It steps out of the way
+     once the floor has scrolled past and comes back the moment the visitor scrolls up. -->
+<header class="navband" id="navband">
+  <div class="nav" id="nav" data-menu="">
+    <a class="brand" href="#top" aria-label="$BELL home">
+      <picture><source type="image/webp" srcset="assets/v2/logo-64.webp"><img src="assets/v2/logo-64.png" width="36" height="36" alt="" decoding="async"></picture>
+      <span class="brand__word">BELL</span><i class="brand__dot" aria-hidden="true"></i>
+    </a>
+    <nav class="nav__links" id="nav-links" aria-label="Sections">
+      <a href="#eight">BELLS</a><a href="#race">RACE</a><a href="#drop">DROP</a><a href="#silence">SILENCE</a><a href="#ringers">RINGERS</a><a href="#pair">PAIR</a>
+    </nav>
+    <div class="nav__right">
+      <button class="chip chip--ca" id="nav-ca" type="button" title="Copy the contract address">CA <span id="nav-ca-short">SOON</span><svg class="ico" width="10" height="10" viewBox="0 0 10 10" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M0 0h6v1H1v5H0zM3 3h7v7H3zM4 4v5h5V4z"/></svg></button>
+      <button class="chip chip--coins" id="coins-chip" type="button" title="Coins caught. Catch the coins bouncing along the floor. Eight coins rings the bell."><img src="assets/v2/sprites/coin-1@1x.png" width="16" height="16" alt="" decoding="async"><b id="coins-n">0</b><span>CAUGHT</span></button>
+      <button class="btn btn--sq btn--white" id="sound-toggle" type="button" aria-pressed="true" title="Sound">
+        <svg class="ico ico--on" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M2 6h3v4H2zM5 5h1v6H5zM6 4h1v8H6zM7 3h1v10H7zM10 5h1v1h-1zM11 6h1v4h-1zM10 10h1v1h-1zM12 3h1v1h-1zM13 4h1v8h-1zM12 12h1v1h-1z"/></svg>
+        <svg class="ico ico--off" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M2 6h3v4H2zM5 5h1v6H5zM6 4h1v8H6zM7 3h1v10H7zM10 5h1v1h-1zM11 6h1v1h-1zM12 7h1v2h-1zM11 9h1v1h-1zM10 10h1v1h-1zM14 5h1v1h-1zM13 6h1v1h-1zM13 9h1v1h-1zM14 10h1v1h-1z"/></svg>
+      </button>
+      <a class="btn btn--gold" id="nav-buy" href="https://www.thestonks.exchange/" target="_blank" rel="noopener">BUY $BELL</a>
+      <button class="btn btn--sq btn--white nav__menu" id="nav-menu" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><svg class="ico" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M2 3h12v2H2zM2 7h12v2H2zM2 11h12v2H2z"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- 3. HERO. The floor itself, full bleed. A sticky stage the height of the viewport inside a
+     260vh runway; scrolling walks the visitor from the wide floor up to the bell, frame by frame.
+     The console floats on the left, the Ringer stands on the right. -->
+<section class="hero" id="top">
+  <div class="stage" id="hero-sticky" data-floor="bottom">
+    <img class="stage__still" id="floor-still-img" src="assets/v2/hero-floor-1600.jpg" srcset="assets/v2/hero-floor-1024.webp 1024w, assets/v2/hero-floor-1600.webp 1600w, assets/v2/hero-floor-2304.webp 2304w" sizes="100vw" width="1600" height="900" alt="The $BELL trading floor at the closing bell" fetchpriority="high" decoding="async">
+    <canvas class="stage__floor" id="floor-canvas" aria-hidden="true"></canvas>
+    <canvas class="rain" id="rain" aria-hidden="true"></canvas>
+    <div class="stage__ui">
+      <div class="console" id="console" data-floor="sheet">
+        <div class="console__bar">
+          <span class="console__ico" aria-hidden="true"></span>
+          <span class="console__title" id="win-title">THE BELL</span>
+          <span class="console__meta" id="clock-meta">NEW YORK</span>
+          <span class="console__load" id="win-load"><i id="win-load-bar"></i></span>
+          <span class="console__btns" aria-hidden="true">
+            <i><svg viewBox="0 0 8 8" shape-rendering="crispEdges"><path fill="#0B1330" d="M1 6h6v2H1z"/></svg></i>
+            <i><svg viewBox="0 0 8 8" shape-rendering="crispEdges"><path fill="#0B1330" d="M0 0h8v2H0zM0 2h1v6H0zM7 2h1v6H7zM1 7h6v1H1z"/></svg></i>
+            <i><svg viewBox="0 0 8 8" shape-rendering="crispEdges"><path fill="#0B1330" d="M0 0h2v1H0zM6 0h2v1H6zM1 1h2v1H1zM5 1h2v1H5zM2 2h1v1H2zM5 2h1v1H5zM3 3h2v2H3zM2 5h1v1H2zM5 5h1v1H5zM1 6h2v1H1zM5 6h2v1H5zM0 7h2v1H0zM6 7h2v1H6z"/></svg></i>
+          </span>
+        </div>
+        <div class="console__body">
+          <div class="hero__pills">
+            <span class="pill pill--white"><i class="dot dot--green"></i>LIVE ON BASE</span>
+            <span class="pill pill--white" id="hero-market">MARKET OPEN</span>
+          </div>
+          <div class="hero__next label" id="clock-next">NEXT BELL · <b>·</b> · <b>·</b></div>
+          <div class="count" id="clock-time" aria-label="Time to the next bell"></div>
+          <div class="bellrow" id="bells" aria-label="Today's bells"></div>
+          <div class="bells-note label" id="bells-note" hidden></div>
+          <h1 class="hero__h1">RING IT.<br>GET PAID IN NVIDIA.</h1>
+          <div class="hero__desk" id="hero-desk" hidden></div>
+          <p class="hero__sub">Eight bells a day on Wall Street time. Biggest buyer each hour wins NVDAc. At the close, every holder gets NVDAc.</p>
+          <div class="hero__cta">
+            <a class="btn btn--gold btn--lg" id="hero-buy" href="https://www.thestonks.exchange/" target="_blank" rel="noopener">BUY $BELL</a>
+            <a class="btn btn--white btn--lg" id="read-tape" href="#drop">READ THE TAPE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ringer" id="ringer" aria-hidden="true">
+      <picture class="ringer__idle"><source type="image/webp" srcset="assets/v2/cut-ringer-idle-450.webp 1x, assets/v2/cut-ringer-idle-900.webp 2x"><img src="assets/v2/cut-ringer-idle-900.png" width="551" height="900" alt="" decoding="async"></picture>
+      <picture class="ringer__pull"><source type="image/webp" srcset="assets/v2/cut-ringer-450.webp 1x, assets/v2/cut-ringer-900.webp 2x"><img src="assets/v2/cut-ringer-900.png" width="752" height="900" alt="" decoding="async"></picture>
+    </div>
+    <div class="hint" id="hint" aria-hidden="true">
+      <span>SCROLL TO WALK IN</span>
+      <svg viewBox="0 0 8 8" shape-rendering="crispEdges"><path fill="#FFFFFF" d="M3 0h2v4H5v1H6v1H7v1H8v1H7v1H6V8H5V7H4V6H3v1H2v1H1V7H0V6h1V5h1V4h1z"/><path fill="#0B1330" d="M3 1h2v3h1v1h1v1h-1v1H5v1H3V7H2V6H1V5h1V4h1z"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- 4. THE DESK. Leading now plate and the receipt row. -->
+<section class="desk paper" id="desk">
+  <div class="container">
+    <div class="plate card" id="plate">
+      <div class="plate__head">
+        <span class="plate__label" id="plate-label">LEADING NOW</span>
+        <span class="pill pill--live" id="plate-live"><i class="dot dot--green"></i>LIVE</span>
+      </div>
+      <div class="plate__body">
+        <img class="plate__prop" src="assets/v2/prop-stopwatch-256.png" width="256" height="256" alt="" decoding="async">
+        <div class="plate__rank" id="plate-rank">1</div>
+        <div class="plate__main">
+          <div class="plate__who" id="plate-who">·</div>
+          <div class="plate__size label" id="plate-size"></div>
+        </div>
+        <div class="plate__cell" id="plate-prize"></div>
+        <div class="plate__cell" id="plate-ends"></div>
+        <a class="btn btn--blue btn--lg" id="plate-cta" href="https://www.thestonks.exchange/" target="_blank" rel="noopener">BEAT IT</a>
+      </div>
+    </div>
+    <div class="receipt">
+      <div class="stat card" id="stat-last">
+        <img class="stat__prop" src="assets/v2/prop-moneybag-256.png" width="256" height="256" alt="" decoding="async">
+        <div class="stat__label label">LAST DROP</div><div class="stat__value">·</div><div class="stat__sub label">·</div>
+      </div>
+      <div class="stat card" id="stat-desk">
+        <img class="stat__prop" src="assets/v2/prop-coins-256.png" width="256" height="256" alt="" decoding="async">
+        <div class="stat__label label">TODAY'S DESK</div><div class="stat__value">·</div><div class="stat__sub label">·</div>
+      </div>
+      <div class="stat card" id="stat-holders">
+        <img class="stat__prop" src="assets/v2/prop-chipcoin-256.png" width="256" height="256" alt="" decoding="async">
+        <div class="stat__label label">HOLDERS</div><div class="stat__value">·</div><div class="stat__sub label">·</div>
+      </div>
+    </div>
+    <p class="desk__fine">$BELL/NVDAc on The Stonks Exchange. Liquidity locked on Uniswap V3. NVDAc is Coinbase's tokenized Nvidia stock.</p>
+  </div>
+</section>
+
+<!-- 5. EIGHT BELLS -->
+<section class="eight paper" id="eight">
+  <div class="container">
+    <div class="sec__head">
+      <span class="pill pill--blue">01 · THE WATCH</span>
+      <h2 class="sec__title">EIGHT BELLS</h2>
+      <p class="kicker">Ships count the watch in bells. Eight ends it. The eighth one here drops NVDAc.</p>
+    </div>
+    <div class="bellgrid" id="bellgrid"></div>
+    <p class="body eight__body" id="eight-note">The NYSE rings twice a day. A ship rings eight times a watch. We took the ship's count and put it on the exchange clock. 9:30 to 4:00, eight rings, seven races, one drop.</p>
+  </div>
+</section>
+
+<!-- 6. THE RACE -->
+<section class="race clip" id="race" data-floor="top">
+  <div class="candles candles--top" data-candles="1" aria-hidden="true"></div>
+  <div class="container race__grid">
+    <div class="race__art">
+      <div class="win win--art">
+        <div class="win__bar"><span class="win__title">THE RACE · EVERY HOUR</span><span class="win__btns" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body">
+          <picture><source type="image/webp" srcset="assets/v2/race-floor-1024.webp 1024w, assets/v2/race-floor-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 50vw"><img src="assets/v2/race-floor-1600.jpg" width="1600" height="900" alt="Two traders race bags of NVDAc to the bell" loading="lazy" decoding="async"></picture>
+        </div>
+      </div>
+    </div>
+    <div class="race__rules">
+      <div class="sec__head">
+        <span class="pill pill--blue">02 · THE HOUR</span>
+        <h2 class="sec__title">THE RACE</h2>
+        <p class="kicker">Every hour, one winner. Biggest buyer by NVDAc paid takes the bonus and goes on the tape.</p>
+      </div>
+      <ol class="rules">
+        <li class="rule card"><span class="rule__n">1</span><img class="rule__prop" src="assets/v2/prop-arrow-128.png" width="128" height="128" alt="" loading="lazy" decoding="async"><div class="rule__txt"><b>BUY BIG</b><p>Every hour on the hour the bell rings and the desk checks the tape. Size wins. Not first, not fastest, biggest.</p></div></li>
+        <li class="rule card"><span class="rule__n">2</span><img class="rule__prop" src="assets/v2/prop-bell-128.png" width="128" height="128" alt="" loading="lazy" decoding="async"><div class="rule__txt"><b>THE BELL RINGS</b><p>The wallet that paid the most NVDAc for $BELL that hour gets the hour's NVDAc bonus, straight from the desk.</p></div></li>
+        <li class="rule card"><span class="rule__n">3</span><img class="rule__prop" src="assets/v2/prop-tape-128.png" width="128" height="128" alt="" loading="lazy" decoding="async"><div class="rule__txt"><b>YOUR NAME ON THE TAPE</b><p>The winner gets printed. Empty hour? The bonus stays in the pot and drops at the close.</p></div></li>
+      </ol>
+      <div class="race__tags"><span class="pill">NOON IS THIN</span><span class="pill">THE FED TALKS AT 2</span><span class="pill pill--gold">POWER HOUR. BRING SIZE.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. THE DROP. The art runs edge to edge, the ledger sits under it. -->
+<section class="drop band clip" id="drop" data-floor="top">
+  <div class="container">
+    <div class="sec__head sec__head--light">
+      <span class="pill pill--white">03 · THE CLOSE</span>
+      <h2 class="sec__title">THE DROP</h2>
+      <p class="kicker">4:00pm ET. The day's fees turn into NVDAc and land on every holder above the dust line. Nothing to claim.</p>
+    </div>
+  </div>
+  <div class="drop__strip" aria-hidden="true" data-floor="bottom">
+    <picture><source type="image/webp" srcset="assets/v2/drop-floor-1024.webp 1024w, assets/v2/drop-floor-1600.webp 1600w" sizes="100vw"><img src="assets/v2/drop-floor-1600.jpg" width="1600" height="900" alt="" loading="lazy" decoding="async"></picture>
+  </div>
+  <div class="container">
+    <div class="drop__grid">
+      <div class="drop__copy">
+        <p class="body body--light">Every trade on the pair pays 1%. The Stonks Exchange pushes 0.7% of that to the desk wallet all day. At Eight Bells the desk bot swaps the pile to NVDAc and drops it on every holder above the dust line, pro rata, straight to the wallet. Under the line? Your share rolls into tomorrow. Nothing to claim, nothing to sign.</p>
+        <div class="drop__tags"><span class="pill pill--white">1% PER TRADE</span><span class="pill pill--white">0.7% TO THE DESK</span><span class="pill pill--gold">PRO RATA · NOTHING TO CLAIM</span></div>
+      </div>
+      <div class="ledger card">
+        <div class="ledger__head">
+          <span class="ledger__title"><img src="assets/v2/prop-gavel-128.png" width="128" height="128" alt="" loading="lazy" decoding="async">THE DROP LEDGER</span>
+          <span class="ledger__sum label" id="drop-sum">·</span>
+          <span class="pill pill--gold" id="drop-record" hidden>RECORD</span>
+        </div>
+        <div class="scroller">
+          <table class="tbl">
+            <thead><tr><th>DAY</th><th class="num">DROPPED NVDAc</th><th class="num">USD</th><th class="num">HOLDERS</th><th class="num">FEES NVDAc</th><th class="num opt">PER 1M BELL</th><th class="opt">TX</th></tr></thead>
+            <tbody id="ledger-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. THE SILENCE -->
+<section class="silence clip" id="silence" data-floor="top">
+  <picture class="silence__bg" aria-hidden="true"><source type="image/webp" srcset="assets/v2/night-floor-1024.webp 1024w, assets/v2/night-floor-1600.webp 1600w" sizes="100vw"><img src="assets/v2/night-floor-1600.jpg" width="1600" height="900" alt="" loading="lazy" decoding="async"></picture>
+  <div class="container silence__grid">
+    <div class="gapcard card card--night">
+      <picture class="gapcard__ringer" aria-hidden="true"><source type="image/webp" srcset="assets/v2/cut-ringer-idle-450.webp 1x, assets/v2/cut-ringer-idle-900.webp 2x"><img src="assets/v2/cut-ringer-idle-450.png" width="275" height="450" alt="" loading="lazy" decoding="async"></picture>
+      <span class="pill pill--white">04 · AFTER THE CLOSE</span>
+      <h2 class="sec__title">THE SILENCE</h2>
+      <div class="gap__label label" id="gap-label">THE GAP</div>
+      <div class="gap__value" id="gap-value">·</div>
+      <div class="gap__unit label" id="gap-unit">NVDAc AND GROWING</div>
+      <div class="gap__meta label" id="gap-meta">·</div>
+      <div class="gap__clock" id="gap-clock">·</div>
+    </div>
+    <div class="facts">
+      <div class="fact card card--night"><b>THE POOL NEVER SLEEPS</b><p>After the close the bell goes quiet. Same on Saturday, Sunday, and every market holiday. The pool does not know that. It keeps trading.</p></div>
+      <div class="fact card card--night"><b>THE GAP KEEPS CLIMBING</b><p>The fees keep landing on the desk and the number under the quiet bell keeps climbing. That number is the gap. It drops at the next Eight Bells.</p></div>
+      <div class="fact card card--night"><b>WEEKENDS STACK</b><p>Weekend fees do not vanish. They pile up and drop Monday at 4. Every fee in the dark stacks the next drop.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. RINGERS -->
+<section class="ringers paper clip" id="ringers">
+  <div class="container">
+    <div class="sec__head sec__head--stamp">
+      <div>
+        <span class="pill pill--blue">05 · THE WALL</span>
+        <h2 class="sec__title">RINGERS</h2>
+        <p class="kicker">The wall of wallets that won a bell.</p>
+        <p class="label ringers__sum" id="ringers-sum">·</p>
+      </div>
+      <img class="stamp" src="assets/v2/ringer-stamp.png" width="344" height="120" alt="Bell ringer stamp" loading="lazy" decoding="async">
+    </div>
+    <div class="ranks">
+      <span class="rank"><img src="assets/v2/medal-gold-128.png" width="128" height="128" alt="" loading="lazy" decoding="async"><b>EIGHT BELLS</b><span>two or more bells</span></span>
+      <span class="rank"><img src="assets/v2/medal-silver-128.png" width="128" height="128" alt="" loading="lazy" decoding="async"><b>THE GAVEL</b><span>won the last race of the day</span></span>
+      <span class="rank"><img src="assets/v2/medal-blue-128.png" width="128" height="128" alt="" loading="lazy" decoding="async"><b>BELL RINGER</b><span>won one hour</span></span>
+    </div>
+    <div class="wall" id="wall"></div>
+    <p class="body">Win one race and you are a Bell Ringer. Win the last race of the day and you are The Gavel. Win two or more and you are Eight Bells. Three ranks, all earned on the tape.</p>
+  </div>
+</section>
+
+<!-- 10. THE PAIR -->
+<section class="pair clip" id="pair" data-floor="top">
+  <div class="candles candles--top" data-candles="2" aria-hidden="true"></div>
+  <div class="container pair__grid">
+    <div class="pair__left">
+      <div class="sec__head">
+        <span class="pill pill--blue">06 · THE STONKS EXCHANGE</span>
+        <h2 class="sec__title">THE PAIR</h2>
+        <p class="kicker">$BELL/NVDAc on The Stonks Exchange. 1% per trade, 0.7% to the desk. Liquidity locked on Uniswap V3.</p>
+      </div>
+      <div class="coin card">
+        <div class="coin__banner"><picture><source type="image/webp" srcset="assets/v2/banner-1500x500.webp"><img src="assets/v2/banner-1500x500.jpg" width="1500" height="500" alt="$BELL banner" loading="lazy" decoding="async"></picture></div>
+        <div class="coin__row">
+          <picture><source type="image/webp" srcset="assets/v2/logo-192.webp"><img class="coin__logo" src="assets/v2/logo-192.png" width="44" height="44" alt="" loading="lazy" decoding="async"></picture>
+          <div class="coin__id"><b>The Bell</b><span>$BELL · <span id="coin-age">·</span></span></div>
+          <span class="chip chip--pair"><i class="chip__ico">N</i>NVDA</span>
+        </div>
+        <div class="coin__chips">
+          <button class="chip chip--ca copy" id="copy-token" type="button" data-copy="" title="Copy the contract address">CA <span id="coin-ca">·</span><svg class="ico" width="10" height="10" viewBox="0 0 10 10" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M0 0h6v1H1v5H0zM3 3h7v7H3zM4 4v5h5V4z"/></svg></button>
+          <span class="pill pill--green">0.7% TO THE DESK</span>
+        </div>
+        <div class="coin__mc"><span class="label">MC</span><b id="coin-mc">·</b><span class="coin__chg" id="coin-chg"></span><span class="coin__by label">by <span id="coin-by">the desk</span></span></div>
+        <div class="coin__links">
+          <a class="sq" id="link-site" href="https://thebell.wtf" target="_blank" rel="noopener" aria-label="Site"><svg class="ico" width="12" height="12" viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M3 0h6v1H3zM2 1h1v1H2zM9 1h1v1H9zM1 2h1v1H1zM10 2h1v1h-1zM0 3h12v1H0zM0 4h1v4H0zM11 4h1v4h-1zM5 1h2v10H5zM0 8h12v1H0zM1 9h1v1H1zM10 9h1v1h-1zM2 10h1v1H2zM9 10h1v1H9zM3 11h6v1H3z"/></svg></a>
+          <a class="sq" id="link-x" href="https://x.com/" target="_blank" rel="noopener" aria-label="X">X</a>
+          <span class="coin__spacer"></span>
+          <a class="sq sq--txt" id="link-dex" href="https://dexscreener.com/base" target="_blank" rel="noopener">DEXS</a>
+          <a class="sq sq--txt" id="link-gecko" href="https://www.geckoterminal.com/base/pools" target="_blank" rel="noopener">GECKO</a>
+          <a class="sq sq--txt" id="link-gmgn" href="https://gmgn.ai/base" target="_blank" rel="noopener">GMGN</a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fl"><span class="label">TOKEN</span><span id="fact-token">·</span><button class="chip copy" id="copy-token-2" type="button" data-copy="">COPY</button></div>
+        <div class="fl"><span class="label">POOL</span><span id="fact-pool">·</span><button class="chip copy" id="copy-pool" type="button" data-copy="">COPY</button></div>
+        <div class="fl"><span class="label">SUPPLY</span><span id="fact-supply">1,000,000,000 · FIXED · NO MINT</span></div>
+        <div class="fl"><span class="label">PRICE</span><span id="fact-price">·</span></div>
+        <div class="fl"><span class="label">SCAN</span><a id="link-scan-token" href="https://basescan.org/" target="_blank" rel="noopener">TOKEN</a><a id="link-scan-pool" href="https://basescan.org/" target="_blank" rel="noopener">POOL</a></div>
+      </div>
+    </div>
+    <div class="pair__right">
+      <div class="howto__head">
+        <picture class="howto__ringer" aria-hidden="true"><source type="image/webp" srcset="assets/v2/cut-ringer-point-450.webp 1x, assets/v2/cut-ringer-point-900.webp 2x"><img src="assets/v2/cut-ringer-point-450.png" width="362" height="450" alt="" loading="lazy" decoding="async"></picture>
+        <div>
+          <h3 class="sec__sub">HOW TO BUY</h3>
+          <p class="kicker">Three steps on The Stonks Exchange. Then the bell does the rest.</p>
+        </div>
+      </div>
+      <ol class="steps">
+        <li class="step card"><span class="step__n">1</span><div><b>CONNECT</b><p>Open The Stonks Exchange and connect a Base wallet.</p></div></li>
+        <li class="step card"><span class="step__n">2</span><div><b>PICK YOUR SIDE</b><p>Pay with NVDAc or ETH. NVDAc is the quote of the pair.</p></div></li>
+        <li class="step card"><span class="step__n">3</span><div><b>BUY $BELL</b><p>Hit buy. Hold above the dust line and the bell finds you at the close. Nothing to claim.</p></div></li>
+      </ol>
+      <p class="body">Want your name on the tape? Be the biggest buyer of the hour, ranked by NVDAc paid.</p>
+      <a class="btn btn--blue btn--lg" id="link-stonks" href="https://www.thestonks.exchange/" target="_blank" rel="noopener">BUY $BELL</a>
+      <div class="why card">
+        <b>WHY NVIDIA</b>
+        <p>NVDAc is the deepest stock pool on Base. It does 57% of all tokenized stock volume on the chain. More coins launch on NVDA than on any other stock pair on The Stonks Exchange. We picked the one the whole floor is already trading.</p>
+        <div class="why__tiles"><div><b>57%</b><span>OF STOCK TOKEN VOLUME ON BASE</span></div><div><b>#1</b><span>STOCK PAIR BY COINS LAUNCHED</span></div><div><b>8</b><span>BELLS A DAY. ONE OF THEM PAYS.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FOOTER on graph paper -->
+<footer class="footer paper clip" data-floor="top">
+  <div class="candles candles--top" data-candles="3" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#top"><picture><source type="image/webp" srcset="assets/v2/logo-64.webp"><img src="assets/v2/logo-64.png" width="36" height="36" alt="" loading="lazy" decoding="async"></picture><span class="brand__word">BELL</span></a>
+        <p class="body">A memecoin that rings on the New York clock and pays in NVDAc. Eight bells a day. The biggest buyer each hour goes on the tape. At the close, the desk drops NVDAc on every holder.</p>
+        <div class="footer__social">
+          <a class="btn btn--sq btn--white" id="footer-x" href="https://x.com/" target="_blank" rel="noopener" aria-label="X">X</a>
+          <a class="btn btn--sq btn--white" id="footer-tg" href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ico" width="14" height="14" viewBox="0 0 14 14" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M12 1h1v1h-1zM10 2h2v1h-2zM8 3h2v1H8zM1 4h1v1H1zM6 4h2v1H6zM11 4h1v1h-1zM2 5h4v1H2zM10 5h1v1h-1zM4 6h6v1H4zM5 7h1v5H5zM6 7h3v1H6zM9 8h1v1H9zM10 9h2v1h-2zM6 9h1v1H6zM7 10h1v1H7z"/></svg></a>
+          <a class="btn btn--white" id="footer-join" href="https://t.me/" target="_blank" rel="noopener">JOIN THE DESK</a>
+        </div>
+        <span class="pill pill--blue"><i class="dot dot--green"></i>LIVE ON BASE · CHAIN 8453</span>
+      </div>
+      <div class="footer__col"><h4>THE BELL</h4><a href="#eight">Eight bells</a><a href="#race">The race</a><a href="#drop">The drop</a><a href="#silence">The silence</a><a href="#ringers">Ringers</a></div>
+      <div class="footer__col"><h4>THE PAIR</h4><a id="f-stonks" href="https://www.thestonks.exchange/" target="_blank" rel="noopener">The Stonks Exchange</a><a id="f-dex" href="https://dexscreener.com/base" target="_blank" rel="noopener">DexScreener</a><a id="f-scan" href="https://basescan.org/" target="_blank" rel="noopener">Basescan</a><a href="https://www.coinbase.com/" target="_blank" rel="noopener">NVDAc by Coinbase</a></div>
+      <div class="footer__col"><h4>NETWORK</h4><a href="https://base.org" target="_blank" rel="noopener">Base</a><a href="https://uniswap.org" target="_blank" rel="noopener">Uniswap V3</a><a href="https://www.thestonks.exchange/" target="_blank" rel="noopener">Stonkex</a></div>
+    </div>
+    <div class="footer__props" aria-hidden="true">
+      <img src="assets/v2/prop-tape-128.png" width="128" height="128" alt="" loading="lazy" decoding="async" data-parallax="0.05">
+      <img src="assets/v2/prop-chart-128.png" width="128" height="128" alt="" loading="lazy" decoding="async" data-parallax="-0.04">
+      <img src="assets/v2/prop-gavel-128.png" width="128" height="128" alt="" loading="lazy" decoding="async" data-parallax="0.07">
+    </div>
+    <div class="footer__state">
+      <span class="label" id="footer-state">STATE · WAITING FOR THE BOT</span>
+      <span class="footer__theme"><span class="label">The page follows the New York clock. Blue while the market is open, navy in the silence.</span><button class="chip" id="preview-toggle" type="button">PREVIEW SILENCE</button></span>
+    </div>
+    <div class="footer__legal">
+      <p>$BELL is an unaudited memecoin on Base, launched on The Stonks Exchange (thestonks.exchange) and priced in NVDAc, the Coinbase tokenized Nvidia stock. It is a meme and a game about the New York clock. It is not a security. Nothing here is advice.</p>
+      <p>$BELL is not Nvidia stock. Holding it gives you no claim on Nvidia Corporation, its shares, or its earnings. NVDAc is issued by Coinbase, backed by shares held in custody, and offered to non-US persons only under Regulation S. Read those terms before you trade.</p>
+      <p>The Stonks Exchange routes the creator share of trading fees, 0.7% of every trade on the pair, to the $BELL desk wallet. The platform drops nothing on holders. Our desk bot, run by us and not by the platform, swaps that share to NVDAc and sends the hourly bonus and the closing bell drop from the desk wallet. The hourly bonus goes to the biggest buyer of the hour by NVDAc paid. The drop goes to every holder above the dust line, pro rata. Smaller shares roll into the next drop. Fees exist only when people trade. If nobody trades, the bell rings on nothing.</p>
+      <p>The bell follows the NYSE schedule. $BELL has no relationship with the New York Stock Exchange, Nvidia, Coinbase, or Base. The NYSE bell sound is trademarked and is not used here. The token can go to zero. Only trade what you can lose.</p>
+    </div>
+    <div class="footer__bottom label">THEBELL · 2026 · SCHEDULE VERIFIED <span id="footer-years">2026, 2027</span></div>
+  </div>
+  <picture class="footer__ringer" aria-hidden="true"><source type="image/webp" srcset="assets/v2/cut-ringer-450.webp 1x, assets/v2/cut-ringer-900.webp 2x"><img src="assets/v2/cut-ringer-450.png" width="376" height="450" alt="" loading="lazy" decoding="async"></picture>
+</footer>
+
+<!-- the living layer: traders, bells and coins run along the floor lines over the page. A floor is any
+     data-floor edge: the top of a band or a candle strip, the bottom of the hero and the drop art,
+     the top of the phone sheet. The viewport bottom only counts when no floor edge is on screen. -->
+<canvas class="sprites" id="sprites" aria-hidden="true"></canvas>
+<div class="toast" id="toast" hidden aria-live="polite"><img src="assets/v2/ringer-stamp.png" width="344" height="120" alt="Bell ringer stamp" decoding="async"><span id="toast-text">EIGHT COINS CAUGHT AND THE BELL RANG FOR YOU</span></div>
+
+<audio id="sfx-bell" src="assets/v2/bell.mp3" preload="none"></audio>
+<audio id="sfx-tick" src="assets/v2/tick.mp3" preload="none"></audio>
+<script type="module" src="app.js"></script>
+</body>
+</html>

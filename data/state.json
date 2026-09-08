@@ -1,0 +1,85 @@
+{
+  "v": 1,
+  "generated_at": "2026-09-08T18:00:00.000Z",
+  "generated_block": null,
+  "bot": {
+    "live": false,
+    "mode": "prelaunch",
+    "poll_ms": 15000
+  },
+  "token": {
+    "symbol": "BELL",
+    "address": null,
+    "decimals": 18,
+    "pool": null,
+    "bell_is_token0": null,
+    "quote": {
+      "symbol": "NVDAc",
+      "address": "0xb20000000000000000000078ee7ce2fe4908108c",
+      "decimals": 8
+    },
+    "launcher": "0x4714f6EC81639Ca59EEBE634490a4d8671DCe7B4",
+    "locker": "0x71D1D363176723f85d98B8B430DF33cde89f0A7f",
+    "launched_at": null,
+    "launch_block": null,
+    "total_supply": "1000000000"
+  },
+  "market": {
+    "state": null,
+    "phase": null,
+    "day": null,
+    "wall": null,
+    "offset_min": null,
+    "market_day": null,
+    "early_close": null,
+    "closure": null,
+    "next_ring": null,
+    "last_ring": null,
+    "seconds_to_next": null,
+    "silence": null,
+    "override": null
+  },
+  "price": {
+    "bell_nvdac": null,
+    "bell_usd": null,
+    "nvdac_usd": null,
+    "mcap_usd": null,
+    "holders": null
+  },
+  "bells": [],
+  "race": null,
+  "last_race": null,
+  "desk": null,
+  "drop": {
+    "today": null,
+    "last": null,
+    "gap": null,
+    "record": null,
+    "ledger": []
+  },
+  "ringers": {
+    "count": 0,
+    "bells_rung": 0,
+    "today": [],
+    "wall": []
+  },
+  "tape": [],
+  "links": {
+    "site": "https://thebell.wtf",
+    "stonks": null,
+    "dexscreener": null,
+    "basescan_token": null,
+    "basescan_pool": null,
+    "x": null,
+    "telegram": null
+  },
+  "meta": {
+    "schedule_verified_years": [
+      2026,
+      2027
+    ],
+    "exclusions": [],
+    "hour_bonus_bps": 1000,
+    "min_drop_raw": "1000"
+  }
+}

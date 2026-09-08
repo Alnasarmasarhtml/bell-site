@@ -1,0 +1,7 @@
+qa/v2/
+qa/v3/
+qa/*.png
+qa/*.jpg
+__pycache__/
+.DS_Store
+*.pyc
