@@ -1044,7 +1044,7 @@
     "dexscreener": "https://dexscreener.com/base/0xA6350000000000000000000000000000000020B1",
     "basescan_token": "https://basescan.org/token/0xBE11000000000000000000000000000000000BE1",
     "basescan_pool": "https://basescan.org/address/0xA6350000000000000000000000000000000020B1",
-    "x": null,
+    "x": "https://x.com/bellonbase",
     "telegram": null
   },
   "meta": {
