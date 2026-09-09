@@ -44,7 +44,7 @@ def frame_set(w, h, dpr=1):
     if w < 760 and h > w:
         return "-tall"
     need = max(w, h * 16 / 9) * dpr
-    return "-sm" if need <= 700 else "" if need <= 1100 else "-xl" if need <= 2400 else "-4k"
+    return "-sm" if need <= 700 else "" if need <= 1100 else "-xl" if need <= 2000 else "-2k" if need <= 3300 else "-4k"
 
 
 EDGE_JS = """

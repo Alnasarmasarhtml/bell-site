@@ -55,7 +55,14 @@ const DEMO_RING = params.get('demo') === 'ring';
 const THEME_PARAM = ['open', 'closed'].includes(params.get('theme')) ? params.get('theme') : null;
 const BOOT = Date.now();
 // ?demo (any value, including demo=ring) reads the invented demo file, so QA never depends on the bot's file.
+// Otherwise the live state comes straight from the desk box (Caddy on the VPS, CORS open, no-store), so the
+// page never waits on a GitHub Pages build. The copy next to the page (data/state.json) is the fallback:
+// the pre-launch file, or the last pushed copy when the desk cannot be reached.
+const DESK_STATE_URL = 'https://desk.bellonbase.fun/state.json';
 const STATE_URL = params.has('demo') ? 'data/state.demo.json' : 'data/state.json';
+const USE_DESK = !params.has('demo') && !params.has('local');
+let deskFails = 0;
+let pollCount = 0;
 const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function now() {
@@ -301,12 +308,24 @@ function isStale(n, open) {
   return stateAge(n) > (open ? STALE_OPEN_MS : STALE_CLOSED_MS);
 }
 
+async function fetchJson(url) {
+  const res = await fetch(url, { cache: 'no-store' });
+  if (!res.ok) throw new Error(`state ${res.status}`);
+  const json = await res.json();
+  return json && typeof json === 'object' ? json : null;
+}
+// The desk first, the local copy second. After three misses in a row the desk is only tried every sixth
+// poll, so a box that is not up yet (or a pre-launch page) does not throw a failed request every 20 seconds.
 async function fetchState() {
+  pollCount += 1;
   try {
-    const res = await fetch(STATE_URL, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`state ${res.status}`);
-    const json = await res.json();
-    STATE = json && typeof json === 'object' ? json : null;
+    let json = null;
+    if (USE_DESK && (deskFails < 3 || pollCount % 6 === 0)) {
+      try { json = await fetchJson(DESK_STATE_URL); deskFails = 0; }
+      catch (err) { deskFails += 1; console.warn('desk state unreachable', err.message); }
+    }
+    if (!json) json = await fetchJson(STATE_URL);
+    STATE = json;
     const sig = JSON.stringify([STATE?.generated_at, STATE?.tape?.length, STATE?.race?.index, STATE?.drop?.ledger?.length]);
     if (sig !== stateSignature) {
       stateSignature = sig;
@@ -379,8 +398,9 @@ function setStill(open) {
 }
 // The set follows the width the cover fit actually needs in device pixels: a 16:9 frame covering a
 // 1440x900 window is 1600px wide, so a laptop gets the 1920 set, a small 1x window the 960 set, a
-// tiny landscape window the 640 set, and anything that needs more than 2400 device px (a 3440 ultrawide,
-// a retina laptop) the native 4K set. A phone in portrait gets the tall set, a 9:16 crop of the same
+// tiny landscape window the 640 set, a retina laptop (a 14in MacBook needs about 3250 device px) the 2560 set,
+// and only a window that needs more than 3300 device px (the 3440 ultrawide, a 4K monitor) the native 4K set.
+// Frames are WebP at quality 80, so the 2560 set is about 24 MB for the whole runway and the 4K set about 38 MB. A phone in portrait gets the tall set, a 9:16 crop of the same
 // clip, so the strip above the sheet shows the bell sharp instead of a stretched landscape frame.
 function frameSetFor(open) {
   const base = open ? 'hero' : 'night';
@@ -389,7 +409,7 @@ function frameSetFor(open) {
   const dpr = window.devicePixelRatio || 1;
   if (w < 760 && h > w) return `${base}-tall`;
   const need = Math.max(w, (h * 16) / 9) * dpr;
-  return `${base}${need <= 700 ? '-sm' : need <= 1100 ? '' : need <= 2400 ? '-xl' : '-4k'}`;
+  return `${base}${need <= 700 ? '-sm' : need <= 1100 ? '' : need <= 2000 ? '-xl' : need <= 3300 ? '-2k' : '-4k'}`;
 }
 function sizeCanvas() {
   const c = el.floorCanvas;
@@ -1322,7 +1342,7 @@ function renderFacts() {
   el.linkScanToken.href = links.basescan_token || (addr ? `https://basescan.org/token/${addr}` : 'https://basescan.org/');
   el.linkScanPool.href = links.basescan_pool || (pool ? `https://basescan.org/address/${pool}` : 'https://basescan.org/');
   el.fScan.href = el.linkScanToken.href;
-  el.linkSite.href = links.site || 'https://thebell.wtf';
+  el.linkSite.href = links.site || 'https://bellonbase.fun';
   // social buttons show only once the handle exists; a bare host is not a link
   if (links.x) { el.linkX.href = links.x; el.footerX.href = links.x; }
   el.linkX.hidden = !links.x;

@@ -1,1 +1,1 @@
-{"count": 97, "width": 1080, "height": 1920, "pattern": "f_%04d.jpg", "fps": 12, "loop": false, "camera": "push-in wide to close", "crop": "9:16 centre of the 16:9 clip", "source": "seedance-2.0 4k"}
+{"count": 97, "width": 1080, "height": 1920, "pattern": "f_%04d.webp", "fps": 12, "loop": false, "camera": "push-in wide to close", "crop": "9:16 centre of the 16:9 clip", "source": "seedance-2.0 4k"}
