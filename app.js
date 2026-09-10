@@ -32,14 +32,14 @@ const STALE_OPEN_MS = 180_000;
 const STALE_CLOSED_MS = 900_000;
 const BELL_NAMES = ['FIRST BELL', 'SECOND BELL', 'THIRD BELL', 'FOURTH BELL', 'FIFTH BELL', 'SIXTH BELL', 'SEVENTH BELL', 'EIGHT BELLS'];
 const BELL_COPY = [
-  ['The Opening Bell', 'New York opens. The desk opens. Race one starts. On a Monday this bell shows the weekend gap.'],
-  ['The Short Bell', 'Thirty minutes of racing. Shortest race of the day, fastest name on the tape.'],
-  ['The Coffee Bell', 'Second race settled. The desk finds its rhythm.'],
-  ['The Noon Bell', 'Halfway through the eight. Lunch is thin. A small buy can take the hour.'],
-  ['The Afternoon Watch', 'Back half begins. On an early-close day this is the closing bell and the drop lands here.'],
-  ['The Fed Bell', 'The Fed talks at 2. The desk does not care. Ring.'],
-  ['The Power Hour Bell', "Last race. Wall Street's loudest hour. Bring size."],
-  ['The Closing Bell', "Gavel down. The day's fees become NVDAc and drop on every holder above the dust line. Then silence."],
+  ['The Opening Bell', 'New York opens at 9:30 and the first race starts. On a Monday this bell also shows the gap: the fees that came in over the weekend.'],
+  ['The Short Bell', 'First race settled. It is only 30 minutes long, 9:30 to 10.'],
+  ['The Eleven Bell', 'Second race settled. From here it is one race an hour.'],
+  ['The Noon Bell', 'Halfway. Lunch hours are usually quiet, so a smaller buy can win one.'],
+  ["The One O'Clock Bell", 'Fourth race settled. On an early close day the market shuts here, and this bell does the drop.'],
+  ["The Two O'Clock Bell", 'Fifth race settled. Two bells left.'],
+  ['The Power Hour Bell', 'Sixth race settled. The last race, 3 to 4, starts now.'],
+  ['The Closing Bell', "Market closes. The day's fees are swapped to NVDAc and sent to every holder. Then the bell is quiet until the next open."],
 ];
 const WEEKDAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 const WEEKDAYS_LONG = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
@@ -788,8 +788,8 @@ function renderBellGrid(m) {
     </div>`;
   }).join('');
   setText(el.eightNote, five
-    ? 'Early close today. Five bells, four races, one drop, and the 1:00 bell is Eight Bells. The desk swaps the pile and drops it at 1:00pm ET.'
-    : "The NYSE rings twice a day. A ship rings eight times a watch. We took the ship's count and put it on the exchange clock. 9:30 to 4:00, eight rings, seven races, one drop.");
+    ? 'Early close today. The market shuts at 1:00, so there are five bells and four races, and the 1:00 bell does the drop.'
+    : "9:30 open, then 10, 11, 12, 1, 2, 3, and the 4:00 close. The first seven each end a race for the biggest buy. The eighth swaps the day's fees to NVDAc and sends them to holders. On the two early close days a year the market shuts at 1:00, so there are five bells and the 1:00 bell pays.");
 }
 
 function tick() {
