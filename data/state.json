@@ -1,18 +1,18 @@
 {
   "v": 1,
-  "generated_at": "2026-09-08T18:00:00.000Z",
-  "generated_block": null,
+  "generated_at": "2026-09-10T20:20:49.798Z",
+  "generated_block": "51141151",
   "bot": {
-    "live": false,
-    "mode": "prelaunch",
-    "poll_ms": 15000
+    "live": true,
+    "mode": "live",
+    "poll_ms": 20000
   },
   "token": {
     "symbol": "BELL",
-    "address": null,
+    "address": "0xD1d2369366518651c9cdC8EE32a02D6Ffaaa8f62",
     "decimals": 18,
-    "pool": null,
-    "bell_is_token0": null,
+    "pool": "0x948831cE80e65138dCA8bE797b40d0Dd41EfD726",
+    "bell_is_token0": false,
     "quote": {
       "symbol": "NVDAc",
       "address": "0xb20000000000000000000078ee7ce2fe4908108c",
@@ -20,40 +20,165 @@
     },
     "launcher": "0x4714f6EC81639Ca59EEBE634490a4d8671DCe7B4",
     "locker": "0x71D1D363176723f85d98B8B430DF33cde89f0A7f",
-    "launched_at": null,
-    "launch_block": null,
+    "launched_at": "2026-09-10T20:15:29.000Z",
+    "launch_block": "51140986",
     "total_supply": "1000000000"
   },
   "market": {
-    "state": null,
-    "phase": null,
-    "day": null,
-    "wall": null,
-    "offset_min": null,
-    "market_day": null,
-    "early_close": null,
+    "state": "closed",
+    "phase": "silence",
+    "day": "2026-09-10",
+    "wall": "4:20:49 PM",
+    "offset_min": -240,
+    "market_day": true,
+    "early_close": false,
     "closure": null,
-    "next_ring": null,
-    "last_ring": null,
-    "seconds_to_next": null,
-    "silence": null,
-    "override": null
+    "next_ring": {
+      "index": 0,
+      "kind": "open",
+      "at": "2026-09-11T13:30:00.000Z",
+      "wall": "9:30 AM",
+      "name": "FIRST BELL",
+      "day": "2026-09-11"
+    },
+    "last_ring": {
+      "index": 7,
+      "kind": "close",
+      "at": "2026-09-10T20:00:00.000Z",
+      "wall": "4:00 PM",
+      "name": "EIGHT BELLS",
+      "day": "2026-09-10"
+    },
+    "seconds_to_next": 61750,
+    "silence": {
+      "from": "2026-09-10T20:00:00.000Z",
+      "to": "2026-09-11T13:30:00.000Z",
+      "kind": "overnight",
+      "reason": null
+    }
   },
   "price": {
-    "bell_nvdac": null,
-    "bell_usd": null,
-    "nvdac_usd": null,
-    "mcap_usd": null,
-    "holders": null
+    "bell_nvdac": "0.000000272427",
+    "bell_usd": "0.0000595676",
+    "nvdac_usd": "218.65",
+    "mcap_usd": "59567.6",
+    "holders": 93
   },
-  "bells": [],
+  "bells": [
+    {
+      "index": 0,
+      "kind": "open",
+      "at": "2026-09-10T13:30:00.000Z",
+      "wall": "9:30 AM",
+      "name": "FIRST BELL",
+      "state": "missed",
+      "winner": null,
+      "gap_revealed_nvdac": null
+    },
+    {
+      "index": 1,
+      "kind": "hour",
+      "at": "2026-09-10T14:00:00.000Z",
+      "wall": "10:00 AM",
+      "name": "SECOND BELL",
+      "state": "missed",
+      "winner": null
+    },
+    {
+      "index": 2,
+      "kind": "hour",
+      "at": "2026-09-10T15:00:00.000Z",
+      "wall": "11:00 AM",
+      "name": "THIRD BELL",
+      "state": "skipped",
+      "winner": null
+    },
+    {
+      "index": 3,
+      "kind": "hour",
+      "at": "2026-09-10T16:00:00.000Z",
+      "wall": "12:00 PM",
+      "name": "FOURTH BELL",
+      "state": "skipped",
+      "winner": null
+    },
+    {
+      "index": 4,
+      "kind": "hour",
+      "at": "2026-09-10T17:00:00.000Z",
+      "wall": "1:00 PM",
+      "name": "FIFTH BELL",
+      "state": "skipped",
+      "winner": null
+    },
+    {
+      "index": 5,
+      "kind": "hour",
+      "at": "2026-09-10T18:00:00.000Z",
+      "wall": "2:00 PM",
+      "name": "SIXTH BELL",
+      "state": "skipped",
+      "winner": null
+    },
+    {
+      "index": 6,
+      "kind": "hour",
+      "at": "2026-09-10T19:00:00.000Z",
+      "wall": "3:00 PM",
+      "name": "SEVENTH BELL",
+      "state": "skipped",
+      "winner": null
+    },
+    {
+      "index": 7,
+      "kind": "close",
+      "at": "2026-09-10T20:00:00.000Z",
+      "wall": "4:00 PM",
+      "name": "EIGHT BELLS",
+      "state": "skipped",
+      "winner": null,
+      "drop": null
+    }
+  ],
   "race": null,
   "last_race": null,
-  "desk": null,
+  "desk": {
+    "address": "0x69c251eef010c567e17d7C0375CbDFe205A708A1",
+    "nvdac": "0.00",
+    "bell": "0",
+    "eth": "0.0198",
+    "fees_today_nvdac": "0.00",
+    "fees_today_bell": "0",
+    "bell_as_nvdac_est": "0.00",
+    "pot_est_nvdac": "0.00",
+    "pot_est_usd": "0.00",
+    "holders_eligible": 93,
+    "circulating_bell": "692712097.545547383825696021",
+    "per_million_bell_nvdac_est": "0.00",
+    "holders_indexed_to_block": "51141119"
+  },
   "drop": {
-    "today": null,
+    "today": {
+      "day": "2026-09-10",
+      "at": "2026-09-10T20:00:00.000Z",
+      "pot_est_nvdac": "0.00",
+      "pot_est_usd": "0.00",
+      "holders_eligible": 93,
+      "circulating_bell": "692712097.545547383825696021",
+      "per_million_bell_nvdac_est": "0.00",
+      "settled": false
+    },
     "last": null,
-    "gap": null,
+    "gap": {
+      "state": "building",
+      "from": "2026-09-10T20:00:00.000Z",
+      "to": "2026-09-11T13:30:00.000Z",
+      "kind": "overnight",
+      "reason": null,
+      "nvdac_est": "0.00",
+      "usd_est": "0.00",
+      "revealed_at": null
+    },
     "record": null,
     "ledger": []
   },
@@ -66,10 +191,10 @@
   "tape": [],
   "links": {
     "site": "https://bellonbase.fun",
-    "stonks": null,
-    "dexscreener": null,
-    "basescan_token": null,
-    "basescan_pool": null,
+    "stonks": "https://www.thestonks.exchange/token/0xD1d2369366518651c9cdC8EE32a02D6Ffaaa8f62",
+    "dexscreener": "https://dexscreener.com/base/0x948831cE80e65138dCA8bE797b40d0Dd41EfD726",
+    "basescan_token": "https://basescan.org/token/0xD1d2369366518651c9cdC8EE32a02D6Ffaaa8f62",
+    "basescan_pool": "https://basescan.org/address/0x948831cE80e65138dCA8bE797b40d0Dd41EfD726",
     "x": "https://x.com/bellonbase",
     "telegram": "https://t.me/bellonbasechat"
   },
@@ -78,7 +203,23 @@
       2026,
       2027
     ],
-    "exclusions": [],
+    "exclusions": [
+      "0x948831ce80e65138dca8be797b40d0dd41efd726",
+      "0x71d1d363176723f85d98b8b430df33cde89f0a7f",
+      "0x4714f6ec81639ca59eebe634490a4d8671dce7b4",
+      "0x03a520b32c04bf3beef7beb72e919cf822ed34f1",
+      "0x000000000000000000000000000000000000dead",
+      "0x0000000000000000000000000000000000000000",
+      "0x69c251eef010c567e17d7c0375cbdfe205a708a1",
+      "0x48aefa3a1d8cae27f982a3af720584f3d0216778",
+      "0x2626664c2603336e57b271c5c0b26f421741e481",
+      "0x6ff5693b99212da76ad316178a184ab56d299b43",
+      "0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad",
+      "0x01f178473dcac0ce4b2b2111becfb074b586dd12",
+      "0x000000000022d473030f116ddee9f6b43ac78ba3",
+      "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789",
+      "0x0000000071727de22e5e9d8baf0edac6f37da032"
+    ],
     "hour_bonus_bps": 1000,
     "min_drop_raw": "1000"
   }
