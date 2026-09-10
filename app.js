@@ -782,7 +782,7 @@ function renderBellGrid(m) {
     if (w) win = `<div class="bcard__win">WINNER ${esc(who(w))}${nvda(w.prize_nvdac) !== null ? ` · +${esc(nvda(w.prize_nvdac))} NVDAc` : ''}</div>`;
     else if (r.kind === 'open' && x && nvda(x.gap_revealed_nvdac) !== null) win = `<div class="bcard__win">GAP REVEALED +${esc(nvda(x.gap_revealed_nvdac))} NVDAc</div>`;
     else if (r.kind === 'close' && x?.drop && nvda(x.drop.dropped_nvdac) !== null) win = `<div class="bcard__win">DROPPED ${esc(nvda(x.drop.dropped_nvdac))} NVDAc ON ${esc(int(x.drop.holders_paid) ?? '·')} HOLDERS</div>`;
-    const stateWord = st === 'rung' ? 'RUNG' : st === 'next' ? 'NEXT' : st === 'ringing' ? 'RINGING' : 'PENDING';
+    const stateWord = st === 'rung' ? 'RUNG' : st === 'skipped' ? 'BEFORE LAUNCH' : st === 'next' ? 'NEXT' : st === 'ringing' ? 'RINGING' : 'PENDING';
     return `<div class="bcard card" data-state="${st}">
       <div class="bcard__ico"></div>
       <div class="bcard__time">${esc(wallShort(r.wall))}</div>
