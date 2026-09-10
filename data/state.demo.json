@@ -1045,7 +1045,7 @@
     "basescan_token": "https://basescan.org/token/0xBE11000000000000000000000000000000000BE1",
     "basescan_pool": "https://basescan.org/address/0xA6350000000000000000000000000000000020B1",
     "x": "https://x.com/bellonbase",
-    "telegram": null
+    "telegram": "https://t.me/bellonbasechat"
   },
   "meta": {
     "schedule_verified_years": [

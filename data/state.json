@@ -71,7 +71,7 @@
     "basescan_token": null,
     "basescan_pool": null,
     "x": "https://x.com/bellonbase",
-    "telegram": null
+    "telegram": "https://t.me/bellonbasechat"
   },
   "meta": {
     "schedule_verified_years": [
