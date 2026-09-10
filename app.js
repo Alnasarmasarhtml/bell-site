@@ -30,7 +30,13 @@ const POLL_OPEN_MS = 15_000;
 const POLL_CLOSED_MS = 60_000;
 const STALE_OPEN_MS = 180_000;
 const STALE_CLOSED_MS = 900_000;
-const BELL_NAMES = ['FIRST BELL', 'SECOND BELL', 'THIRD BELL', 'FOURTH BELL', 'FIFTH BELL', 'SIXTH BELL', 'SEVENTH BELL', 'EIGHT BELLS'];
+const BELL_NAMES = ['FIRST BELL', 'SECOND BELL', 'THIRD BELL', 'FOURTH BELL', 'FIFTH BELL', 'SIXTH BELL', 'SEVENTH BELL', 'CLOSING BELL'];
+// The hold rule on the plate: a wallet that sold part of its buy shows what still counts next to what it paid.
+function sizeLabel(r) {
+  const sold = parseFloat(String(r.sold_bell || '0').replace(/,/g, ''));
+  if (sold > 0 && r.paid_raw_nvdac) return `NVDAc COUNTED ${nvda(r.bought_nvdac)} · PAID ${nvda(r.paid_raw_nvdac)}`;
+  return `NVDAc PAID ${nvda(r.bought_nvdac)}`;
+}
 const BELL_COPY = [
   ['The Opening Bell', 'New York opens at 9:30 and the first race starts. On a Monday this bell also shows the gap: the fees that came in over the weekend.'],
   ['The Short Bell', 'First race settled. It is only 30 minutes long, 9:30 to 10.'],
@@ -38,7 +44,7 @@ const BELL_COPY = [
   ['The Noon Bell', 'Halfway. Lunch hours are usually quiet, so a smaller buy can win one.'],
   ["The One O'Clock Bell", 'Fourth race settled. On an early close day the market shuts here, and this bell does the drop.'],
   ["The Two O'Clock Bell", 'Fifth race settled. Two bells left.'],
-  ['The Power Hour Bell', 'Sixth race settled. The last race, 3 to 4, starts now.'],
+  ["The Three O'Clock Bell", 'Sixth race settled. The last race, 3 to 4, starts now.'],
   ['The Closing Bell', "Market closes. The day's fees are swapped to NVDAc and sent to every holder. Then the bell is quiet until the next open."],
 ];
 const WEEKDAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
@@ -208,7 +214,7 @@ function ringLabel(ring, todayKey) {
 }
 function ringName(ring) {
   if (!ring) return '·';
-  if (ring.kind === 'close') return 'EIGHT BELLS';
+  if (ring.kind === 'close') return 'CLOSING BELL';
   return BELL_NAMES[ring.index] || `BELL ${ring.index + 1}`;
 }
 function ringCopy(ring) {
@@ -726,7 +732,7 @@ function computeMarks(n, todayKey, rings, next, ringingRing, sk) {
       ? `NO BELL TODAY · ${String(sk.reason).toUpperCase()} · NEXT BELLS ${wd(next.day)}`
       : `NO BELL ON ${WEEKDAYS_LONG[keyToUtc(todayKey).getUTCDay()]} · NEXT BELLS ${wd(next.day)}`;
   } else if (list.length && n >= list[list.length - 1].at && !ringingRing) {
-    note = `${list.length === 5 ? 'FIVE BELLS' : 'EIGHT BELLS'} · WATCH OVER · NEXT BELLS ${next ? wd(next.day) : '·'}`;
+    note = `${list.length === 5 ? 'FIVE BELLS' : 'EIGHT BELLS'} · ALL RUNG · NEXT BELLS ${next ? wd(next.day) : '·'}`;
   } else if (list.length === 5) {
     note = 'EARLY CLOSE · FIVE BELLS · THE 1:00 BELL IS THE CLOSING BELL';
   }
@@ -788,8 +794,8 @@ function renderBellGrid(m) {
     </div>`;
   }).join('');
   setText(el.eightNote, five
-    ? 'Early close today. The market shuts at 1:00, so there are five bells and four races, and the 1:00 bell does the drop.'
-    : "9:30 open, then 10, 11, 12, 1, 2, 3, and the 4:00 close. The first seven each end a race for the biggest buy. The eighth swaps the day's fees to NVDAc and sends them to holders. On the two early close days a year the market shuts at 1:00, so there are five bells and the 1:00 bell pays.");
+    ? 'Early close today. The market shuts at 1:00, so there are five bells and four races. The 1:00 bell ends the last race and does the drop.'
+    : "9:30 open, then 10, 11, 12, 1, 2, 3, and the 4:00 close. The 9:30 bell starts the first race. Every bell after it ends one, seven races in all. The 4:00 bell ends the last race and then swaps the day's fees to NVDAc and sends them to holders. On the two early close days a year the market shuts at 1:00, so there are five bells and the 1:00 bell does the drop.");
 }
 
 function tick() {
@@ -854,7 +860,7 @@ function tick() {
   let nextLine;
   if (ringing && ringingRing.kind === 'close') {
     meta = `NEW YORK <b>${clock}</b> · CLOSING BELL · DROPPING <b>${potEst ? `${potEst} NVDAc` : '·'}</b>${potEst ? ' EST' : ''}`;
-    nextLine = `<b>EIGHT BELLS</b> · <b>${esc(wallShort(ringingRing.wall))}</b> · GAVEL DOWN`;
+    nextLine = `<b>CLOSING BELL</b> · <b>${esc(wallShort(ringingRing.wall))}</b> · DROP GOING OUT`;
   } else if (ringing) {
     meta = `NEW YORK <b>${clock}</b> · BELL <b>${esc(wallShort(ringingRing.wall))}</b> · RINGING`;
     nextLine = `<b>${ringName(ringingRing)}</b> · <b>${esc(wallShort(ringingRing.wall))}</b> · RINGING NOW`;
@@ -875,15 +881,15 @@ function tick() {
   let deskLine = '';
   if (ringing && ringingRing.kind === 'close') {
     const amountUsd = usd(STATE?.drop?.today?.pot_est_usd ?? deskObj.pot_est_usd);
-    if (potEst) deskLine = `DROPPING ${potEst} NVDAc${amountUsd ? ` (${amountUsd})` : ''} ON EVERY HOLDER · GAVEL DOWN`;
+    if (potEst) deskLine = `SENDING ${potEst} NVDAc${amountUsd ? ` (${amountUsd})` : ''} TO HOLDERS · DROP GOING OUT`;
   } else if (open || sk?.kind === 'pre') {
     const amountUsd = usd(STATE?.drop?.today?.pot_est_usd ?? deskObj.pot_est_usd);
     const closeWall = rings.length ? wallShort(rings[rings.length - 1].wall) : closeWallOf(next?.day);
-    if (potEst) deskLine = `DESK HOLDS ${potEst} NVDAc${amountUsd ? ` (${amountUsd})` : ''} FOR THE ${closeWall} DROP`;
+    if (potEst) deskLine = `POT ${potEst} NVDAc${amountUsd ? ` (${amountUsd})` : ''} FOR THE ${closeWall} DROP`;
   } else {
     const gapAmt = nvda(gapObj.nvdac_est ?? deskObj.pot_est_nvdac);
     const gapUsd = usd(gapObj.usd_est ?? deskObj.pot_est_usd);
-    if (gapAmt) deskLine = `GAP ${gapAmt} NVDAc${gapUsd ? ` (${gapUsd})` : ''} AND GROWING FOR THE ${next ? `${wd(next.day)} ${closeWallOf(next.day)}` : 'NEXT'} DROP`;
+    if (gapAmt) deskLine = `FEES SINCE THE CLOSE ${gapAmt} NVDAc${gapUsd ? ` (${gapUsd})` : ''}, GOING INTO THE ${next ? `${wd(next.day)} ${closeWallOf(next.day)}` : 'NEXT'} DROP`;
   }
   setText(el.heroDesk, deskLine);
   el.heroDesk.hidden = !deskLine;
@@ -943,8 +949,8 @@ function renderTicker() {
     if (leader) items.push(tkItem('1', `LEADING NOW <b>${esc(who(leader))}</b> <span class="up">${arrowSvg(true)} ${esc(nvdaOr(leader.bought_nvdac))}</span>`));
     else items.push(tkItem('1', `LEADING NOW <b>NOBODY YET</b> <span class="k">FIRST BUY LEADS</span>`));
     const pot = nvda(STATE?.drop?.today?.pot_est_nvdac ?? STATE?.desk?.pot_est_nvdac);
-    if (pot) items.push(tkItem('D', `DESK HOLDS <b>${esc(pot)} NVDAc</b> FOR THE CLOSE`));
-    if (rings.length === 5) items.push(tkItem('!', `<span class="hot">EARLY CLOSE TODAY</span> FIVE BELLS. EIGHT BELLS RINGS AT 1:00.`));
+    if (pot) items.push(tkItem('D', `POT <b>${esc(pot)} NVDAc</b> FOR THE CLOSING DROP`));
+    if (rings.length === 5) items.push(tkItem('!', `<span class="hot">EARLY CLOSE TODAY</span> FIVE BELLS. CLOSING BELL AT 1:00.`));
   } else {
     const sk = silenceKind(n, todayKey, rings, next);
     if (sk.kind === 'holiday') items.push(tkItem('!', `NO BELL TODAY. <b>${esc(String(sk.reason).toUpperCase())}</b>.`));
@@ -952,7 +958,7 @@ function renderTicker() {
     items.push(tkItem('B', `NEXT BELL <b>${esc(next ? `${wallShort(next.wall)} ${wd(next.day)} ${MONTHS[keyToUtc(next.day).getUTCMonth()]} ${keyToUtc(next.day).getUTCDate()}` : '·')}</b> <span class="hot" data-live="next">·</span>`));
     const gap = STATE?.drop?.gap;
     const gapVal = gap && nvda(gap.nvdac_est) !== null ? nvda(gap.nvdac_est) : nvda(STATE?.desk?.pot_est_nvdac);
-    if (gapVal) items.push(tkItem('D', `GAP <b>${esc(gapVal)} NVDAc</b> <span class="up">${arrowSvg(true)} AND GROWING</span>`));
+    if (gapVal) items.push(tkItem('D', `FEES SINCE THE CLOSE <b>${esc(gapVal)} NVDAc</b> <span class="up">${arrowSvg(true)} GROWING</span>`));
     items.push(tkItem('P', `POOL STILL TRADING. EVERY FEE STACKS THE NEXT DROP.`));
   }
   const last = STATE?.drop?.last || (Array.isArray(STATE?.drop?.ledger) ? STATE.drop.ledger[0] : null);
@@ -1025,7 +1031,7 @@ function renderPlate(n, todayKey, rings, win, next, prev, open, ringingRing, sk)
     if (leader) {
       setCell(el.plateRank, String(leader.rank || 1));
       setText(el.plateWho, who(leader));
-      setCell(el.plateSize, leader.bought_nvdac ? `NVDAc PAID ${nvda(leader.bought_nvdac)}${leader.buys ? ` · ${int(leader.buys)} BUY${Number(leader.buys) === 1 ? '' : 'S'}` : ''}` : '');
+      setCell(el.plateSize, leader.bought_nvdac ? `${sizeLabel(leader)}${leader.buys ? ` · ${int(leader.buys)} BUY${Number(leader.buys) === 1 ? '' : 'S'}` : ''}` : '');
     } else if (current) {
       setCell(el.plateRank, '');
       setText(el.plateWho, 'NO BUYS YET · FIRST BUY LEADS');
@@ -1033,7 +1039,7 @@ function renderPlate(n, todayKey, rings, win, next, prev, open, ringingRing, sk)
       cta = 'TAKE IT';
     } else {
       setCell(el.plateRank, '');
-      setText(el.plateWho, STATE ? 'WAITING FOR THE DESK' : 'WAITING FOR THE BOT');
+      setText(el.plateWho, 'WAITING FOR THE BOT');
       setCell(el.plateSize, '');
       cta = 'BUY $BELL';
     }
@@ -1048,7 +1054,7 @@ function renderPlate(n, todayKey, rings, win, next, prev, open, ringingRing, sk)
     if (w) {
       setCell(el.plateRank, '1');
       setText(el.plateWho, who(w));
-      setCell(el.plateSize, w.bought_nvdac ? `NVDAc PAID ${nvda(w.bought_nvdac)}` : '');
+      setCell(el.plateSize, w.bought_nvdac ? sizeLabel(w) : '');
       setCellHTML(el.platePrize, prizeHtml({ prize_nvdac: w.prize_nvdac }));
     } else {
       setCell(el.plateRank, '');
@@ -1094,7 +1100,7 @@ function renderReceipt(n, todayKey, rings, next, prev, open, sk) {
   } else {
     let firstCloseDay = todayKey;
     if (!rings.length || n >= rings[rings.length - 1].at) firstCloseDay = next ? next.day : todayKey;
-    setStat(el.statLast, 'LAST DROP (NVDAc)', '·', `FIRST EIGHT BELLS ${wd(firstCloseDay)} ${closeWallOf(firstCloseDay, closeWall)}`, true);
+    setStat(el.statLast, 'LAST DROP (NVDAc)', '·', `FIRST CLOSING BELL ${wd(firstCloseDay)} ${closeWallOf(firstCloseDay, closeWall)}`, true);
   }
 
   // 2. today's desk, or the gap in silence
@@ -1131,12 +1137,12 @@ function renderSilence(n, todayKey, rings, next, prev, open, sk) {
     setText(el.gapValue, revealed ? nvda(gap.nvdac_est) : (nvda(desk.pot_est_nvdac) ?? '·'));
     setText(el.gapUnit, revealed ? `NVDAc · REVEALED AT THE FIRST BELL${gap.reason ? ` · ${String(gap.reason).toUpperCase()}` : ''}` : 'NVDAc ON THE DESK SO FAR');
     setText(el.gapMeta, closeRing ? `THE BELL GOES QUIET AT ${wallShort(closeRing.wall)} ET · THE POOL KEEPS TRADING` : 'THE POOL KEEPS TRADING');
-    setHTML(el.gapClock, closeRing ? `EIGHT BELLS IN <b>${hhmmss(closeRing.at.getTime() - n.getTime())}</b>` : '·');
+    setHTML(el.gapClock, closeRing ? `CLOSING BELL IN <b>${hhmmss(closeRing.at.getTime() - n.getTime())}</b>` : '·');
   } else {
     const gapVal = gap.nvdac_est ?? desk.pot_est_nvdac ?? null;
     setText(el.gapLabel, 'THE GAP');
     setText(el.gapValue, nvda(gapVal) ?? '·');
-    setText(el.gapUnit, nvda(gapVal) !== null ? 'NVDAc AND GROWING' : 'BUILDING · THE DESK READS IT AT THE FIRST BELL');
+    setText(el.gapUnit, nvda(gapVal) !== null ? 'NVDAc IN FEES SINCE THE CLOSE' : 'BUILDING · COUNTED AT THE 9:30 BELL');
     const since = prev ? `${wd(prev.day)} ${wallShort(prev.wall)}` : '·';
     const reason = sk?.kind === 'holiday' ? ` · ${String(sk.reason).toUpperCase()}` : sk?.kind === 'weekend' ? ' · WEEKEND' : '';
     setText(el.gapMeta, `BUILDING SINCE ${since}${reason} · OPENS ${next ? ringLabel(next, todayKey) : '·'}`);
@@ -1198,7 +1204,7 @@ function renderLedger() {
   const todaySettled = sorted.some((d) => d.day === todayKey);
   if (!todaySettled && rings.length && n < rings[rings.length - 1].at) {
     const closeWall = wallShort(rings[rings.length - 1].wall);
-    out.push(`<tr class="silence" id="ledger-today"><td colspan="${LEDGER_COLS}">${esc(dayLabel(todayKey))} · EIGHT BELLS ${esc(closeWall)} ET · DROPPING IN <span id="ledger-today-in">·</span> · <span id="ledger-today-pot">·</span></td></tr>`);
+    out.push(`<tr class="silence" id="ledger-today"><td colspan="${LEDGER_COLS}">${esc(dayLabel(todayKey))} · CLOSING BELL ${esc(closeWall)} ET · DROP IN <span id="ledger-today-in">·</span> · <span id="ledger-today-pot">·</span></td></tr>`);
     if (sorted.length && sorted[0].day < todayKey) {
       const g = gapBetween(sorted[0].day, todayKey);
       const gap = STATE?.drop?.gap;
@@ -1209,7 +1215,7 @@ function renderLedger() {
     const gap = STATE?.drop?.gap;
     const nextR = nextRing(n);
     const g = gapBetween(sorted[0].day, nextR ? nextR.day : todayKey);
-    const amount = gap && nvda(gap.nvdac_est) !== null ? `GAP +${nvda(gap.nvdac_est)} NVDAc` : 'GAP BUILDING';
+    const amount = gap && nvda(gap.nvdac_est) !== null ? `FEES SINCE THE CLOSE +${nvda(gap.nvdac_est)} NVDAc` : 'FEES BUILDING';
     if (g) out.push(silenceRow(g.first, g.last, g.reason, `${esc(amount)} · INTO ${esc(nextR ? `${wd(nextR.day)} ${closeWallOf(nextR.day)}` : '·')}`));
   }
   for (let i = 0; i < sorted.length; i += 1) {
@@ -1222,7 +1228,7 @@ function renderLedger() {
   }
   if (!sorted.length) {
     const nextR = nextRing(n);
-    out.push(`<tr class="empty"><td colspan="${LEDGER_COLS}">NO DROP YET · THE FIRST EIGHT BELLS ${esc(nextR ? `${wd(nextR.day)} ${closeWallOf(nextR.day)}` : '·')} ET WRITES THE FIRST ROW</td></tr>`);
+    out.push(`<tr class="empty"><td colspan="${LEDGER_COLS}">NO DROP YET · THE FIRST CLOSING BELL ${esc(nextR ? `${wd(nextR.day)} ${closeWallOf(nextR.day)}` : '·')} ET WRITES THE FIRST ROW</td></tr>`);
   }
   el.ledgerBody.innerHTML = out.join('');
   const total = sorted.reduce((acc, d) => acc + (Number(d.dropped_nvdac) || 0), 0);
@@ -1254,7 +1260,7 @@ function tileWho(o) {
 }
 function medalFor(rank, closing) {
   const r = String(rank || '').toUpperCase();
-  const name = r === 'EIGHT BELLS' ? 'gold' : (r === 'THE GAVEL' || closing) ? 'silver' : 'blue';
+  const name = (r === 'TWO BELLS' || r === 'EIGHT BELLS') ? 'gold' : (r === 'THE GAVEL' || closing) ? 'silver' : 'blue';
   return `<img class="tile__medal" src="assets/v2/medal-${name}-128.png" width="128" height="128" alt="" loading="lazy" decoding="async">`;
 }
 function renderWall() {

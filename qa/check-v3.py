@@ -148,7 +148,7 @@ def scene_checks(name, w, h, dpr, text, wants):
             fails.append(f"ringer box {rg} leaves the stage")
         if w >= 760 and con["w"] > min(960 if w >= 2200 else 760, 0.56 * w) + 2:
             fails.append(f"console is {con['w']}px wide at {w}")
-    if name == "open" and not text["desk"].startswith("DESK HOLDS"):
+    if name == "open" and not text["desk"].startswith("POT "):
         fails.append(f"desk line reads {text['desk']!r}")
     if wants.get("ringing"):
         if text["bell"] != "ringing":
